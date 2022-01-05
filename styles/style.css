@@ -16,7 +16,7 @@ header {
 
 header a img {
     padding-top: 18px;
-    padding-left: 70px;
+    padding-left: 35px;
     padding-bottom: 8px;
 }
 
@@ -30,7 +30,7 @@ header nav ul {
     position: relative;
     display: flex;
     padding-top: 15px;
-    padding-right: 300px;
+    padding-right: 75px;
     list-style: none;
 }
 
