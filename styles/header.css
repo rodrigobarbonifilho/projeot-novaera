@@ -121,6 +121,8 @@ header {
 
   .menu-section.activate {
     position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,6 +137,7 @@ header {
   }
 
   .menu-section nav ul {
+    display: block;
     text-align: center;
     padding: 0px;
   }
