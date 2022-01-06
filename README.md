@@ -1,2 +1,2 @@
-# projeot-novaera
+# projeto-novaera
  Refazendo uma página da web
