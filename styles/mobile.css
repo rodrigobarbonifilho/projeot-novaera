@@ -1,0 +1,43 @@
+header .content nav {
+  display: none;
+}
+
+header .content .toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.412);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+header .content .toggle-button span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: blue;
+  border-radius: 20%;
+  transition: 0.5s;
+}
+
+header .content .toggle-button span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+header .content .toggle-button span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+header .content .toggle-button.activate span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+header .content .toggle-button.activate span:nth-child(2) {
+  transform: translateX(150%);
+}

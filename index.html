@@ -5,64 +5,70 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 960px)">
   <title>Home</title>
 </head>
 <body style="height: 200vh;">
   <header>
-    <a href="index.html"><img src="images/logo-novaera.png" alt="Logo da Nova Era"></a>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="home-outline" size="large"></ion-icon>
-            </span>
-            <span class="text">Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="business-outline" size="large"></ion-icon>
-            </span>
-            <span class="text">Quem Somos</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="bookmarks-outline" size="large"></ion-icon>
-            </span>
-            <span class="text">Cursos</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="globe-outline" size="large"></ion-icon>
-            </span>
-            <span class="text">EAD</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="build-outline" size="large"></ion-icon>
-            </span>
-            <span class="text">Serviços</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon">
-              <ion-icon name="call-outline" size="large"></ion-icon>
-            </span>
-            <span class="text">Contato</span>
-          </a>
-        </li>
-     </ul>
-   </nav>
+    <div class="content">
+      <div class="logo-image">
+        <a href="index.html">
+          <img src="images/logo-novaera.png" alt="Logo da Nova Era" class="logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="text">HOME</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="text">QUEM SOMOS</span>
+              <span class="icon">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="text">CURSOS</span>
+              <span class="icon">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="text">EAD</span>
+              <span class="icon">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="text">SERVIÇOS</span>
+              <span class="icon">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="text">CONTATO</span>
+            </a>
+          </li>
+        </ul>  
+      </nav>
+      <div class="toggle-button">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </div>
+    </div>
   </header>
   <main>
     <div style="background-color: green; height: 50vh;"></div>
@@ -70,4 +76,5 @@
 </body>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
 </html>
