@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+@font-face {
+  font-family: "Nazegul";
+  src: url("../fonts/nazegul/Nazegul-Regular.ttf");
+}
+
 /* 
 Padrão:
   1 - Posicionamento,
@@ -18,17 +23,6 @@ Padrão:
   --color05: #B8D9CA;
 }
 
-/********/
-/* Body */
-/********/
-body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  height: 97vh;
-}
-
 /**********/
 /* Header */
 /**********/
@@ -41,7 +35,7 @@ header {
   height: 70px;
   margin: 0px auto;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, #70c5a2, #C8D1C8, #34906a 120%);
+  background-image: linear-gradient(to bottom, #4a9174, #a9c2a9, #1c5f43 120%);
 }
 
 .header-content {
@@ -87,17 +81,31 @@ header {
   color: var(--color05);
 }
 
+/********/
+/* Body */
+/********/
+body {
+  display: flex;
+  font-size: 62.5%;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  height: 200vh;
+}
+
 @media (max-width: 768px) and (min-width: 300px) {
   /**********/
   /* Header */
   /**********/
-  .header-content > div.toggle-button {
+  .header-content > .toggle-button {
     position: relative;
     display: flex;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.315);
     width: 40px;
     height: 40px;
-    background-color: var(--color05);
+    background-color: var(--color01);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -107,11 +115,11 @@ header {
   .header-content > .toggle-button > span {
     position: absolute;
     top: 47%;
-    right: 13%;
+    right: 20%;
     display: block;
-    width: 30px;
+    width: 25px;
     height: 3px;
-    background-color: var(--color03);
+    background-color: var(--color02);
     transition: 0.3s;
   }
 
