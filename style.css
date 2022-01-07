@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--color02);
+  background-color: var(--color03);
   height: 80px;
 }
 
@@ -40,15 +40,11 @@
 
 .cabecalho-menu-lista-item-link {
   font-family: "Asap";
-  color: var(--color04);
-}
-
-.principal {
-  height: 100%;
+  color: var(--color02);
 }
 
 .rodape {
-  background-color: var(--color02);
-  height: 20px;
+  background-color: var(--color03);
+  height: 50px;
   text-align: center;
 }
