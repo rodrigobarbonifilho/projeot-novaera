@@ -59,16 +59,16 @@ header {
   display: none;
 }
 
-.menu-section nav ul {
+.menu-section .menu-list {
   display: flex;
   list-style: none;
 }
 
-.menu-section nav ul li {
+.menu-section .menu .menu-list .menu-list-item {
   border-radius: 5px;
 }
 
-.menu-section nav ul li a {
+.menu-section .menu .menu-list .menu-list-item .menu-list-item-link {
   padding: 2px 5px;
   border-radius: 4px;
   color: var(--color02);
@@ -76,7 +76,7 @@ header {
   transition: 0.5s;
 }
 
-.menu-section nav ul li:hover a {
+.menu-section .menu .menu-list .menu-list-item:hover .menu-list-item-link {
   background-color: var(--color04);
   color: var(--color05);
 }
@@ -140,21 +140,21 @@ body {
     z-index: 10;
   }
 
-  .menu-section nav {
+  .menu-section .menu {
     width: 100%;
   }
 
-  .menu-section nav ul {
+  .menu-section .menu .menu-list {
     display: block;
     text-align: center;
     padding: 0px;
   }
 
-  .menu-section nav ul li {
+  .menu-section .menu .menu-list .menu-list-item {
     display: block;
   }
 
-  .menu-section nav ul li a {
+  .menu-section .menu .menu-list .menu-list-item .menu-list-item-link {
     display: block;
     color: var(--color03);
     text-decoration: none;
@@ -162,7 +162,7 @@ body {
     padding: 5px;
   }
 
-  .menu-section nav ul li:hover a {
+  .menu-section .menu .menu-list .menu-list-item:hover .menu-list-item-link {
     background-color: var(--color04);
   }
 }
