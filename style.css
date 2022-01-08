@@ -98,6 +98,7 @@ body {
   grid-template-rows: 1fr 1fr;
 
   justify-content: center;
+  justify-items: center;
 }
 
 .card-container {
@@ -122,6 +123,7 @@ body {
 }
 
 .rodape {
+  font-family: "Catamaran";
   background-color: var(--constrast-color);
   text-align: center;
   margin-top: 20px;
@@ -129,4 +131,13 @@ body {
 
 .rodape-texto {
   padding: 30px;
+}
+
+.rodape-link {
+  color: black;
+  transition: 0.3s;
+}
+
+.rodape-link:hover {
+  color: var(--color04);
 }
