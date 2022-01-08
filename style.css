@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
   font-family: "Nazegul";
@@ -12,19 +14,23 @@
   text-decoration: none;
 }
 
+body {
+}
+
 :root {
+  --constrast-color: #44dab9;
   --color05: #155939;
   --color04: #1B8C57;
   --color03: #5EA689;
   --color02: #84BFA4;
-  --color01: #B8D9CA;  
+  --color01: #B8D9CA;
 }
 
 .cabecalho {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--color03);
+  background-color: var(--constrast-color);
   height: 80px;
 }
 
@@ -39,12 +45,88 @@
 }
 
 .cabecalho-menu-lista-item-link {
-  font-family: "Asap";
-  color: var(--color02);
+  font-family: "Catamaran";
+  font-weight: 800;
+  color: var(--color05);
+}
+
+.principal-hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  background-image: url("images/escavadeira-filtro-verde-grande.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.principal-hero-texto {
+  text-align:  center;
+  color: white;
+}
+
+.principal-hero-texto-titulo {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+.principal-hero-texto-paragrafo {
+  font-family: "Catamaran";
+  font-size: 1.8rem;
+}
+
+.conteudo-principal-titulo {
+  border-bottom: 1px solid black;
+  max-width: 600px;
+  margin: 0px auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.conteudo-principal-cursos {
+  display: grid;
+  margin: 0px auto;
+  max-width: 1400px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+
+  justify-content: center;
+}
+
+.card-container {
+  padding: 10px;
+  max-width: 90%;
+}
+
+.card {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);  
+  transform: translate(0px, -10px);
+}
+
+.card-imagem {
+  width: 100%;
 }
 
 .rodape {
-  background-color: var(--color03);
-  height: 50px;
+  background-color: var(--constrast-color);
   text-align: center;
+  margin-top: 20px;
+}
+
+.rodape-texto {
+  padding: 30px;
 }
