@@ -8,31 +8,31 @@ const cards = {
     solda: {
         img: "images/solda-card.jpg",
         titulo: "Solda",
-        descricao: "Curso sobre Solda Avançada Shuernous",
+        descricao: "Curso sobre Solda Avançada",
         id: "solda",
     },
     empilhadeira: {
         img: "images/empilhadeira-card.jpg",
         titulo: "Empilhadeira",
-        descricao: "Curso sobre Operação AVANÇADA de Empilhadeiras",
+        descricao: "Curso sobre Operação de Empilhadeiras",
         id: "empilhadeira",
     },
     formacao: {
         img: "images/mecanico-card.jpg",
         titulo: "Formação de Mecânicos Florestais",
-        descricao: "Curso de Especialização em Manutenção AVANÇADA de Máquinas Florestais TOP",
+        descricao: "Curso de Especialização em Manutenção de Máquinas Florestais",
         id: "formacao",
     },
     maquinasFlorestais: {
         img: "images/harvester-card.jpg",
         titulo: "Máquinas Florestais",
-        descricao: "Curso de Operação MAIS QUE AVANÇADA sobre Máquinas Florestais",
+        descricao: "Curso de Operação sobre Máquinas Florestais",
         id: "maquinas-florestais",
     },
     teste: {
-        img: "images/display.jpg",
-        titulo: "Teste",
-        descricao: "Teste Pequeno",
+        img: "images/lampada-logo-bl.jpg",
+        titulo: "Nova Era",
+        descricao: "Uma empresa consciente, cuidando do Meio Ambiente",
         id: "teste",
     }
 }

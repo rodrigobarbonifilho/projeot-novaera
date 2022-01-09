@@ -65,8 +65,8 @@
   align-items: center;
   width: 100%;
   height: 700px;
-  background-image: url("images/escavadeira-filtro-verde-grande.jpg");
-  background-position: bottom center;
+  background-image: url("images/escavadeira-filtro-verde.jpg");
+  background-position: bottom left;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -148,7 +148,7 @@
 .card-descricao {
   font-weight: 500;
   margin-top: 5px;
-  height: 50px;
+  height: 100px;
 }
 
 .card-btn {
@@ -171,6 +171,7 @@
 }
 
 .curso-detalhado {
+  font-family: var(--normal-font);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -178,10 +179,23 @@
   width: 100%;
   height: 1000px;
   margin-bottom: 0px;
+  color: white;
+  transition: 0.3s;
+}
+
+.texto-detalhado {
+  position: relative;
+  top: 15%;
+  left: 10%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  width: 500px;
+  background-color: rgba(128, 128, 128, 0.453);
 }
 
 #retroescavadeira {
-  background-image: url("images/retroescavadeira-card.jpg");
+  background-image: url("images/retroescavadeira-detalhado.jpg");
 }
 
 .hide {
@@ -196,7 +210,6 @@
   font-family: var(--normal-font);
   background-color: var(--constrast-color);
   text-align: center;
-  margin-top: 20px;
 }
 
 .rodape-texto {
