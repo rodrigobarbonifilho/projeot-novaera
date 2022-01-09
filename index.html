@@ -1,39 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/toggle-button-animation.css" media="(min-width: 300px)">
-  <title>Home</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Página Inicial da Nova Era</title>
 </head>
 <body>
-  <header>
-    <div class="header-content">
-      <div class="image">
-        <img src="images/logo-novaera.png" alt="Logo da Empresa">
-      </div>
-      <div class="toggle-button">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>  
-      <div class="menu-section"></div>
-      <nav class="menu">
-        <ul class="menu-list">
-          <li class="menu-list-item"><a class="menu-list-item-link" href="#">HOME</a></li>
-          <li class="menu-list-item"><a class="menu-list-item-link" href="#">QUEM SOMOS</a></li>
-          <li class="menu-list-item"><a class="menu-list-item-link" href="#">CURSOS</a></li>
-          <li class="menu-list-item"><a class="menu-list-item-link" href="#">EAD</a></li>
-          <li class="menu-list-item"><a class="menu-list-item-link" href="#">SERVIÇOS</a></li>
-          <li class="menu-list-item"><a class="menu-list-item-link" href="#">CONTATO</a></li>
-        </ul>
-      </nav>          
-    </div>
-  </header>
-  <main>
-  </main>
+	<header class="cabecalho">
+		<img class="cabecalho-logo" src="images/logo-novaera.png" alt="Logo da Nova Era - Treinamentos">
+		<nav class="cabecalho-menu"">
+			<ul class="cabecalho-menu-lista">
+				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">HOME</a></li>
+				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">QUEM SOMOS</a></li>
+				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">CURSOS</a></li>
+				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">EAD</a></li>
+				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">SERVIÇOS</a></li>
+				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">CONTATO</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="principal">
+		<div class="principal-hero">
+			<section class="principal-hero-texto">
+				<h1 class="principal-hero-texto-titulo">Nova Era</h1>
+				<p class="principal-hero-texto-paragrafo">A anos ensinando com qualidade</p>
+			</section>
+		</div>
+
+		<div class="conteudo-principal">
+			<h2 class="conteudo-principal-titulo">Aqui você pode econtrar cursos sobre</h2>
+			<div class="conteudo-principal-cursos">
+				<div class="card-container">
+					<div class="card">
+						<img class="card-imagem" src="images/retroescavadeira-card.jpg" alt="">
+						<h4 class="card-titulo card-texto">Retroescavadeira</h4>
+						<p class="card-descricao card-texto">Curso sobre Operação de Retroescavadeiras</p>
+						<button class="card-btn" onclick="showRetroDiv()"">Saber Mais</button>
+					</div>		
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<img class="card-imagem" src="images/retroescavadeira-card.jpg" alt="">
+						<h4 class="card-titulo card-texto">Cursos de Escavadeira</h4>
+						<p class="card-descricao card-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sapiente eligendi ab accusantium sit repellat non odio</p>
+						<button class="card-btn">Saber Mais</button>
+					</div>		
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<img class="card-imagem" src="images/retroescavadeira-card.jpg" alt="">
+						<h4 class="card-titulo card-texto">Cursos de Escavadeira</h4>
+						<p class="card-descricao card-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sapiente eligendi ab accusantium sit repellat non odio</p>
+						<button class="card-btn">Saber Mais</button>
+					</div>		
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<img class="card-imagem" src="images/retroescavadeira-card.jpg" alt="">
+						<h4 class="card-titulo card-texto">Cursos de Escavadeira</h4>
+						<p class="card-descricao card-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sapiente eligendi ab accusantium sit repellat non odio</p>
+						<button class="card-btn">Saber Mais</button>
+					</div>		
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<img class="card-imagem" src="images/retroescavadeira-card.jpg" alt="">
+						<h4 class="card-titulo card-texto">Cursos de Escavadeira</h4>
+						<p class="card-descricao card-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sapiente eligendi ab accusantium sit repellat non odio</p>
+						<button class="card-btn">Saber Mais</button>
+					</div>		
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<img class="card-imagem" src="images/retroescavadeira-card.jpg" alt="">
+						<h4 class="card-titulo card-texto">Cursos de Escavadeira</h4>
+						<p class="card-descricao card-texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse sapiente eligendi ab accusantium sit repellat non odio</p>
+						<button class="card-btn">Saber Mais</button>
+					</div>		
+				</div>
+			</div>
+			<div class="conteudo-principal-curso-detalhado">
+				<div class="retroescavadeira hide"></div>
+				<div class="hide"></div>
+				<div class="hide"></div>
+				<div class="hide"></div>
+				<div class="hide"></div>
+				<div class="hide"></div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="rodape">
+		<p class="rodape-texto">&copy; <a class="rodape-link" href="https://github.com/rodrigobarbonifilho">Feito por Rodrigo Barboni Filho</a></p>
+	</footer>
 </body>
-<script src="activate-toggle-button.js"></script>
+
 </html>

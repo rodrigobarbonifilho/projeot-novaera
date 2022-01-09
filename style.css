@@ -14,10 +14,8 @@
   text-decoration: none;
 }
 
-body {
-}
-
 :root {
+  --normal-font: "Catamaran", sans-serif;
   --constrast-color: #44dab9;
   --color05: #155939;
   --color04: #1B8C57;
@@ -41,13 +39,21 @@ body {
 .cabecalho-menu-lista {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 15px;
 }
 
 .cabecalho-menu-lista-item-link {
-  font-family: "Catamaran";
+  font-family: var(--normal-font);
   font-weight: 800;
   color: var(--color05);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cabecalho-menu-lista-item:hover {
+  background-color: var(--color01);
+  transform: translateY(-10px);
 }
 
 .principal-hero {
@@ -74,7 +80,7 @@ body {
 }
 
 .principal-hero-texto-paragrafo {
-  font-family: "Catamaran";
+  font-family: var(--normal-font);
   font-size: 1.8rem;
 }
 
@@ -96,34 +102,63 @@ body {
   max-width: 1400px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
 
   justify-content: center;
   justify-items: center;
 }
 
 .card-container {
-  padding: 10px;
-  max-width: 90%;
+  max-width: 95%;
 }
 
 .card {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);  
-  transform: translate(0px, -10px);
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);  
+  transform: translateY(-10px);
 }
 
 .card-imagem {
   width: 100%;
 }
 
+.card-texto {
+  font-family: var(--normal-font);
+  text-indent: 1em;
+}
+
+.card-titulo {
+  background-color: green;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.card-descricao {
+  font-weight: 500;
+  margin-top: 5px;
+  height: 50px;
+}
+
+.card-btn {
+  padding: 5px;
+  color: white;
+  background-color: rgb(47, 0, 255);
+  border-radius: 6px;
+  align-self: center;
+  width: 100px;
+  margin: 5px;
+}
+
 .rodape {
-  font-family: "Catamaran";
+  font-family: var(--normal-font);
   background-color: var(--constrast-color);
   text-align: center;
   margin-top: 20px;
