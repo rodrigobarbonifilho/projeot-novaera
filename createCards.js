@@ -1,40 +1,46 @@
 const cards = {
     retroescavadeira: {
-        img: "images/retroescavadeira-card.jpg",
+        img: "images/cards/retroescavadeira.jpg",
         titulo: "Restroescavadeira",
         descricao: "Curso sobre Operação de Retroescavadeiras",
         id: "retroescavadeira",
     },
     solda: {
-        img: "images/solda-card.jpg",
+        img: "images/cards/solda.jpg",
         titulo: "Solda",
         descricao: "Curso sobre Solda Avançada",
         id: "solda",
     },
     empilhadeira: {
-        img: "images/empilhadeira-card.jpg",
+        img: "images/cards/empilhadeira.jpg",
         titulo: "Empilhadeira",
         descricao: "Curso sobre Operação de Empilhadeiras",
         id: "empilhadeira",
     },
     formacao: {
-        img: "images/mecanico-card.jpg",
+        img: "images/cards/mecanico.jpg",
         titulo: "Formação de Mecânicos Florestais",
         descricao: "Curso de Especialização em Manutenção de Máquinas Florestais",
         id: "formacao",
     },
     maquinasFlorestais: {
-        img: "images/harvester-card.jpg",
+        img: "images/cards/maquinas.jpg",
         titulo: "Máquinas Florestais",
         descricao: "Curso de Operação sobre Máquinas Florestais",
         id: "maquinas-florestais",
     },
+    teorica: {
+        img: "images/cards/teoria-pratica.jpg",
+        titulo: "Formação Teórica/Prática",
+        descricao: "Curso Top da balada",
+        id: "teoria",
+    },
     teste: {
-        img: "images/lampada-logo-bl.jpg",
+        img: "images/cards/lampada-logo-bl.jpg",
         titulo: "Nova Era",
         descricao: "Uma empresa consciente, cuidando do Meio Ambiente",
-        id: "teste",
-    }
+        id: "empresa",
+    },
 }
 
 function createCard() {
@@ -49,6 +55,9 @@ function createCard() {
         let btnCard = document.createElement("button");
 
         divCardContainer.className = "card-container";
+        if (values.id == "empresa") {
+            divCardContainer.className += " center-grid";
+        }        
         divCard.className = "card";
         imgCard.className = "card-imagem";
         imgCard.src = values.img;
