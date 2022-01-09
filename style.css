@@ -14,6 +14,10 @@
   text-decoration: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 :root {
   --normal-font: "Catamaran", sans-serif;
   --constrast-color: #44dab9;
@@ -29,7 +33,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: var(--constrast-color);
-  height: 80px;
+  height: 8rem;
 }
 
 .cabecalho-logo {
@@ -39,24 +43,26 @@
 .cabecalho-menu-lista {
   display: flex;
   list-style: none;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .cabecalho-menu-lista-item-link {
+  font-size: 1.6rem;
   font-family: var(--normal-font);
   font-weight: 800;
   color: var(--color05);
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .cabecalho-menu-lista-item {
-  border-radius: 10px;
+  border-radius: 1rem;
   transition: 0.3s;
+
 }
 
 .cabecalho-menu-lista-item:hover {
   background-color: var(--color01);
-  transform: translateY(-10px);
+  transform: translateY(-1rem);
 }
 
 .principal-hero {
@@ -64,36 +70,36 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 700px;
-  background-image: url("images/escavadeira-filtro-verde.jpg");
+  height: 70rem;
+  background-image: url("images/hero/hero-template.jpg");
   background-position: bottom left;
   background-attachment: fixed;
   background-size: cover;
 }
 
 .principal-hero-texto {
-  text-align:  center;
+  text-align: center;
   color: white;
 }
 
 .principal-hero-texto-titulo {
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 7rem;
 }
 
 .principal-hero-texto-paragrafo {
   font-family: var(--normal-font);
-  font-size: 1.8rem;
+  font-size: 3.6rem;
 }
 
 .conteudo-principal-titulo {
   border-bottom: 1px solid black;
-  max-width: 600px;
+  max-width: 60rem;
   margin: 0px auto;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  font-size: 3rem;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   text-align: center;
@@ -101,11 +107,11 @@
 
 .conteudo-principal-cursos {
   display: grid;
-  margin: 20px auto;
-  max-width: 1400px;
+  margin: 2rem auto;
+  max-width: 140rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
-  row-gap: 20px;
+  row-gap: 2rem;
 
   justify-content: center;
   justify-items: center;
@@ -115,59 +121,64 @@
   max-width: 95%;
 }
 
+.center-grid {
+  grid-column-start: 2;
+}
+
 .card {
   width: 100%;
-  border-radius: 10px;
-  box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0.6rem 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   display: flex;
   flex-direction: column;
 }
 
 .card:hover {
-  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);  
-  transform: translateY(-5px);
+  box-shadow: 0.4rem 0.8rem 1.6rem rgba(0, 0, 0, 0.2);  
+  transform: translateY(-0.5rem);
 }
 
 .card-imagem {
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 1rem 1rem 0px 0px;
 }
 
 .card-texto {
   font-family: var(--normal-font);
-  text-indent: 1em;
+  text-indent: 1rem;
 }
 
 .card-titulo {
   background-color: green;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: white;
 }
 
 .card-descricao {
   font-weight: 500;
+  font-size: 1.8rem;
   margin-top: 5px;
-  height: 100px;
+  height: 10rem;
 }
 
 .card-btn {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: white;
-  min-width: 200px;
+  min-width: 20rem;
   background-color: var(--color03);
-  border-radius: 6px;
+  border-radius: 0.6rem;
   border: 1px solid var(--color03);
-  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  padding: 5px;
+  box-shadow: 0rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  padding: 0.5rem;
   align-self: center;
   transition: 0.3s;
 }
 
 .card-btn:active {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-  transform: translateY(4px);
+  box-shadow: 0px 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0.4rem);
 }
 
 .curso-detalhado {
@@ -175,27 +186,68 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  box-shadow: inset -2px 1px 30px 0px black;
+  box-shadow: inset -0.2rem 0.1rem 3rem 0rem black;
   width: 100%;
-  height: 1000px;
-  margin-bottom: 0px;
+  height: 100rem;
+  margin-bottom: 0rem;
   color: white;
+  background-attachment: fixed;
   transition: 0.3s;
 }
 
 .texto-detalhado {
   position: relative;
-  top: 15%;
-  left: 10%;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 1.6rem;
-  width: 500px;
+  top: 3rem;
+  left: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 60rem;
   background-color: rgba(128, 128, 128, 0.453);
+  background-attachment: fixed;
+}
+
+.titulo-detalhado {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 6rem;
+  font-variant: small-caps;
+}
+
+.descricao-detalhado {
+  font-size: 1.8rem;
 }
 
 #retroescavadeira {
-  background-image: url("images/retroescavadeira-detalhado.jpg");
+  background-image: url("images/detalhada/escavadeira.jpg");
+  background-position: center left;
+}
+
+#solda {
+  background-image: url("images/detalhada/solda.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#empilhadeira {
+  background-image: url("images/detalhada/empilhadeira.jpg");
+  background-position: top center;
+}
+
+#formacao {
+  background-image: url("images/detalhada/mecanico-florestal.jpg");
+  background-size: cover;
+}
+
+#teoria {
+  background-image: url("images/detalhada/teoria-pratica.jpg")
+}
+
+#maquinas-florestais {
+  background-image: url("images/detalhada/maquina-florestal.jpg");
+}
+
+#empresa {
+  background-image: url("images/detalhada/floresta.jpg");
 }
 
 .hide {
@@ -207,20 +259,34 @@
 }
 
 .rodape {
+  font-size: 1.8rem;
   font-family: var(--normal-font);
   background-color: var(--constrast-color);
   text-align: center;
 }
 
 .rodape-texto {
-  padding: 30px;
+  padding: 3rem;
 }
 
 .rodape-link {
   color: black;
-  transition: 0.3s;
 }
 
-.rodape-link:hover {
-  color: var(--color04);
+@media (max-width: 1440px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 20%;
+  }
 }
