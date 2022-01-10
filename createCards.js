@@ -35,7 +35,7 @@ const cards = {
         descricao: "Curso Top da balada",
         id: "teoria",
     },
-    teste: {
+    empresa: {
         img: "images/cards/lampada-logo-bl.jpg",
         titulo: "Nova Era",
         descricao: "Uma empresa consciente, cuidando do Meio Ambiente",

@@ -65,6 +65,11 @@ html {
   transform: translateY(-1rem);
 }
 
+.toggle-button {
+  display: none;
+  overflow: hidden;
+}
+
 .principal-hero {
   display: flex;
   justify-content: space-around;
@@ -75,6 +80,7 @@ html {
   background-position: bottom left;
   background-attachment: fixed;
   background-size: cover;
+  box-shadow: inset 0rem 0.1rem 2rem 0rem black;
 }
 
 .principal-hero-texto {
@@ -273,20 +279,79 @@ html {
   color: black;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1440px) { /* LapTop */
   html {
     font-size: 50%;
   }
 }
 
-@media (max-width: 768px) {
-  html {
-    font-size: 40%;
+@media (max-width: 768px) { /* Mobile L  */
+  .cabecalho-menu-lista {
+    display: none;
+  }
+
+  .toggle-button {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+
+  .toggle-button span {
+    position: absolute;
+    top: 46%;
+    left: 12%;
+    width: 25px;
+    height: 3px;
+    background-color: blue;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  .one {
+    transform: translateY(-7px);
+  }
+
+  .three {
+    transform: translateY(7px);
+  }
+
+  .toggle-button.activate .one {
+    transform: rotate(45deg);
+    transition-delay: 0.2s;
+  }
+
+  .toggle-button.activate .two {
+    transform: translateX(200%);
+    transition-delay: ;
+  }
+
+  .toggle-button.activate .three {
+    transform: rotate(315deg);
+    transition-delay: 0.3s;
+  }
+
+  .conteudo-principal-titulo {
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .card-container {
+    grid-column: 2;
+    width: 400px;
+  }
+
+  .texto-detalhado {
+    max-width: 50rem;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px) { /* Mobile S */
   html {
-    font-size: 20%;
+    font-size: 30%;
+  }
+
+  .card-container {
+    width: 200px;
   }
 }
