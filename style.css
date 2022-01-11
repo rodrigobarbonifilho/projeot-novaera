@@ -18,6 +18,14 @@ html {
   font-size: 62.5%;
 }
 
+html.no-scroll {
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --normal-font: "Catamaran", sans-serif;
   --constrast-color: #44dab9;
@@ -62,7 +70,7 @@ html {
 
 .cabecalho-menu-lista-item:hover {
   background-color: var(--color01);
-  transform: translateY(-1rem);
+  transform: translateY(-4px);
 }
 
 .toggle-button {
@@ -194,12 +202,13 @@ html {
   background-position: center center;
   box-shadow: inset -0.2rem 0.1rem 3rem 0rem black;
   width: 100%;
-  height: 100rem;
+  height: 90rem;
   margin-bottom: 0rem;
   color: white;
   background-attachment: fixed;
   transition: 0.3s;
 }
+
 
 .texto-detalhado {
   position: relative;
@@ -279,17 +288,21 @@ html {
   color: black;
 }
 
-@media (max-width: 1440px) { /* LapTop */
+@media (max-width: 1200px) { /* LapTop */
   html {
     font-size: 50%;
+  }
+
+  .principal-hero {
+    background-image: url("images/hero/hero-template-1200.jpg");
   }
 }
 
 @media (max-width: 768px) { /* Mobile L  */
-  .cabecalho-menu-lista {
-    display: none;
+  .principal-hero {
+    background-color: url("images/hero/hero-template-768.jpg");
   }
-
+  
   .toggle-button {
     display: block;
     position: relative;
@@ -299,12 +312,10 @@ html {
 
   .toggle-button span {
     position: absolute;
-    top: 46%;
-    left: 12%;
+    top: 44%;
     width: 25px;
     height: 3px;
-    background-color: blue;
-    border-radius: 10px;
+    background-color: var(--color05);
     transition: 0.3s;
   }
 
@@ -323,7 +334,6 @@ html {
 
   .toggle-button.activate .two {
     transform: translateX(200%);
-    transition-delay: ;
   }
 
   .toggle-button.activate .three {

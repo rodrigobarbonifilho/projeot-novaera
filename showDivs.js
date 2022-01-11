@@ -6,10 +6,15 @@ function hideAllDivs() {
     });
 }
 
-function showDiv(divId) {
+async function showDiv(divId) {
     hideAllDivs();
     let div = document.querySelector(`#${divId}`);
 
     div.classList.toggle("unhide", true);
     div.classList.toggle("hide", false);
+
+    window.scrollTo({
+        top: div.offsetTop,
+        behavior: "smooth",
+    })
 }
