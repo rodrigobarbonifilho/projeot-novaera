@@ -83,7 +83,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 70rem;
+  height: 75vh;
   background-image: url("images/hero/hero-template.jpg");
   background-position: bottom left;
   background-attachment: fixed;
@@ -292,17 +292,9 @@ body {
   html {
     font-size: 50%;
   }
-
-  .principal-hero {
-    background-image: url("images/hero/hero-template-1200.jpg");
-  }
 }
 
 @media (max-width: 768px) { /* Mobile L  */
-  .principal-hero {
-    background-color: url("images/hero/hero-template-768.jpg");
-  }
-  
   .toggle-button {
     display: block;
     position: relative;
@@ -353,15 +345,5 @@ body {
 
   .texto-detalhado {
     max-width: 50rem;
-  }
-}
-
-@media (max-width: 425px) { /* Mobile S */
-  html {
-    font-size: 30%;
-  }
-
-  .card-container {
-    width: 200px;
   }
 }

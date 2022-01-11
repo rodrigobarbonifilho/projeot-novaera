@@ -11,11 +11,11 @@
 <body onload="createCard()">
 	<header class="cabecalho">
 		<img class="cabecalho-logo" src="images/logo-novaera.png" alt="Logo da Nova Era - Treinamentos">
-		<nav class="cabecalho-menu"">
+		<nav class="cabecalho-menu">
 			<ul class="cabecalho-menu-lista">
 				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">HOME</a></li>
 				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">QUEM SOMOS</a></li>
-				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">CURSOS</a></li>
+				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#cursos">CURSOS</a></li>
 				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">EAD</a></li>
 				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">SERVIÇOS</a></li>
 				<li class="cabecalho-menu-lista-item"><a class="cabecalho-menu-lista-item-link" href="#">CONTATO</a></li>
@@ -37,7 +37,7 @@
 		</div>
 
 		<div class="conteudo-principal">
-			<h2 class="conteudo-principal-titulo">Aqui você pode econtrar cursos sobre</h2>
+			<h2 id="cursos" class="conteudo-principal-titulo">Aqui você pode econtrar cursos sobre</h2>
 			<div class="conteudo-principal-cursos"></div>
 			<div class="conteudo-principal-curso-detalhado">
 				<div id="retroescavadeira" class="curso-detalhado hide">
@@ -91,8 +91,9 @@
 	</footer>
 </body>
 
-<script src="showDivs.js"></script>
-<script src="createCards.js"></script>
-<script src="activateToggleButton.js"></script>
+<script src="scripts/showDivs.js"></script>
+<script src="scripts/createCards.js"></script>
+<script src="scripts/activateToggleButton.js"></script>
+<script src="scripts/scroll.js"></script>
 
 </html>
