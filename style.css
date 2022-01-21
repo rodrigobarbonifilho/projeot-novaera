@@ -15,11 +15,8 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
-}
-
-html.no-scroll {
-  overflow: hidden;
 }
 
 body {
@@ -281,7 +278,7 @@ body {
 }
 
 .rodape-texto {
-  padding: 3rem;
+  padding: 1.5rem;
 }
 
 .rodape-link {
