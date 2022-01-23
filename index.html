@@ -7,91 +7,88 @@
 	<meta name="author" content="Rodrigo Barboni Filho">
 	<meta name="description" content="Nova Era - Uma empresa que tem como objetivo formar os melhores profissionais florestais, para que cada vez mais possamos garantir mais empregos e profissionais de qualidade">
 	<meta name="keywords" content="Nova Era, Cursos, Retroescavadeira, Solda, Empilhadeira, Mecânicos Florestais, Máquinas Florestais">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="styles/global.css">
-	<title>Página Inicial da Nova Era</title>
+	
+  <title>Página Inicial da Nova Era</title>
 </head>
 <body onload="createCard()">
-	<header class="cabecalho">
-		<img class="cabecalho-logo" src="images/logo-novaera.webp" alt="Logo da Nova Era - Treinamentos">
-		<nav class="cabecalho-menu">
-			<ul class="cabecalho-menu-lista">
-				<li class="cabecalho-menu-lista-item"><a target="_self" class="cabecalho-menu-lista-item-link" href="#">HOME</a></li>
-				<li class="cabecalho-menu-lista-item"><a target="_self" class="cabecalho-menu-lista-item-link" href="quem-somos.html">QUEM SOMOS</a></li>
-				<li class="cabecalho-menu-lista-item"><a target="_self" class="cabecalho-menu-lista-item-link" href="#cursos">CURSOS</a></li>
-				<li class="cabecalho-menu-lista-item"><a target="_self" class="cabecalho-menu-lista-item-link" href="ead.html">EAD</a></li>
-				<li class="cabecalho-menu-lista-item"><a target="_self" class="cabecalho-menu-lista-item-link" href="servicos.html">SERVIÇOS</a></li>
-				<li class="cabecalho-menu-lista-item"><a target="_self" class="cabecalho-menu-lista-item-link" href="contato.html">CONTATO</a></li>
+	<header class="header">
+		<img class="header__logo" src="images/logo-novaera.webp" alt="Logo da Nova Era - Treinamentos">
+		<nav>
+			<ul class="header__nav__list">
+				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="#">HOME</a></li>
+				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="quem-somos.html">QUEM SOMOS</a></li>
+				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="#courses">CURSOS</a></li>
+				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="ead.html">EAD</a></li>
+				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="servicos.html">SERVIÇOS</a></li>
+				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="contato.html">CONTATO</a></li>
 			</ul>
 		</nav>
-		<div class="toggle-button">
-			<span class="one"></span>
-			<span class="two"></span>
-			<span class="three"></span>
-		</div>
 	</header>
 
-	<main class="principal">
-		<div class="principal-hero">
-			<section class="principal-hero-texto">
-				<h1 class="principal-hero-texto-titulo">Nova Era</h1>
-				<p class="principal-hero-texto-paragrafo">A anos ensinando com qualidade</p>
+	<main>
+		<div class="hero">
+			<section class="hero__text">
+				<h1 class="hero__text__title">Nova Era</h1>
+				<p class="hero__text__paragraph">A anos ensinando com qualidade</p>
         <div class="button-novidades">Saiba o que temos para você</div>
 			</section>
 		</div>
 
-		<div class="conteudo-principal">
-			<h2 id="cursos" class="conteudo-principal-titulo">Aqui você pode encontrar cursos sobre</h2>
-			<div class="conteudo-principal-cursos"></div>
-			<div class="conteudo-principal-curso-detalhado">
-				<div id="retroescavadeira" class="curso-detalhado hide">
-					<div class="texto-detalhado">
-						<h2 class="titulo-detalhado">Retroescavadeira</h2>
-						<p class="descricao-detalhado">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis necessitatibus, sit quo sunt esse facere deserunt dolorem aliquam voluptatem eligendi soluta dolorum et, doloribus illo tempore amet repudiandae iste molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo, quidem, ratione, officia nulla commodi illum natus id error aliquam nisi? Totam, natus? Dolor assumenda nisi amet nemo sapiente eum?</p>
+		<div class="courses">
+			<h2 id="courses" class="courses__title">Aqui você pode encontrar cursos sobre</h2>
+			<div class="courses__cards js-courses__detailed"></div>
+			<div class="courses__detailed">
+				<div id="retroescavadeira" class="courses__detailed hide">
+					<div class="text__detailed">
+						<h2 class="title__detailed">Retroescavadeira</h2>
+						<p class="description__detailed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis necessitatibus, sit quo sunt esse facere deserunt dolorem aliquam voluptatem eligendi soluta dolorum et, doloribus illo tempore amet repudiandae iste molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo, quidem, ratione, officia nulla commodi illum natus id error aliquam nisi? Totam, natus? Dolor assumenda nisi amet nemo sapiente eum?</p>
 					</div>
 				</div>
-				<div id="solda" class="curso-detalhado hide">
-					<div class="texto-detalhado">
-						<h2 class="titulo-detalhado">Soldas - Tig, Mig, Eletroudos e Massaricos</h2>
-						<p class="descricao-detalhado">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, facere! Error, sunt exercitationem accusantium temporibus quae culpa. Eum voluptatibus repudiandae saepe error, repellat sint possimus rem ad doloribus expedita amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda natus repellat id dolores impedit illo soluta minima voluptate nobis, aspernatur placeat sint at repudiandae tempora unde error iure molestiae?</p>
+				<div id="solda" class="courses__detailed hide">
+					<div class="text__detailed">
+						<h2 class="title__detailed">Soldas - Tig, Mig, Eletroudos e Massaricos</h2>
+						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, facere! Error, sunt exercitationem accusantium temporibus quae culpa. Eum voluptatibus repudiandae saepe error, repellat sint possimus rem ad doloribus expedita amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda natus repellat id dolores impedit illo soluta minima voluptate nobis, aspernatur placeat sint at repudiandae tempora unde error iure molestiae?</p>
 					</div>
 				</div>
-				<div id="empilhadeira" class="curso-detalhado hide">
-					<div class="texto-detalhado">
-						<h2 class="titulo-detalhado">Cursos e Treinamentos</h2>
-						<p class="descricao-detalhado">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dignissimos a officiis minus iste necessitatibus delectus praesentium, porro unde debitis suscipit harum! Ut natus minus eius iure veniam eveniet soluta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus perferendis cupiditate debitis quae doloribus a aut eum! Optio ad suscipit tenetur, commodi earum atque praesentium accusamus error iure distinctio!</p>
+				<div id="empilhadeira" class="courses__detailed hide">
+					<div class="text__detailed">
+						<h2 class="title__detailed">Cursos e Treinamentos</h2>
+						<p class="description__detailed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dignissimos a officiis minus iste necessitatibus delectus praesentium, porro unde debitis suscipit harum! Ut natus minus eius iure veniam eveniet soluta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus perferendis cupiditate debitis quae doloribus a aut eum! Optio ad suscipit tenetur, commodi earum atque praesentium accusamus error iure distinctio!</p>
 					</div>
 				</div>
-				<div id="formacao" class="curso-detalhado hide">
-					<div class="texto-detalhado">
-						<h2 class="titulo-detalhado">Manutenção de Máquinas Florestais e Formação de Mecânicos Florestais</h2>
-						<p class="descricao-detalhado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
+				<div id="formacao" class="courses__detailed hide">
+					<div class="text__detailed">
+						<h2 class="title__detailed">Manutenção de Máquinas Florestais e Formação de Mecânicos Florestais</h2>
+						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
 					</div>
 				</div>
-				<div id="maquinas-florestais" class="curso-detalhado hide">
-					<div class="texto-detalhado">
-						<h2 class="titulo-detalhado">Máquinas Florestais</h2>						
-						<p class="descricao-detalhado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
+				<div id="maquinas-florestais" class="courses__detailed hide">
+					<div class="text__detailed">
+						<h2 class="title__detailed">Máquinas Florestais</h2>						
+						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
 					</div>
 				</div>
-				<div id="empresa" class="curso-detalhado hide">
-					<div class="texto-detalhado">
-						<h2 class="titulo-detalhado">Meio Ambiente</h2>						
-						<p class="descricao-detalhado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
+				<div id="empresa" class="courses__detailed hide">
+					<div class="text__detailed">
+						<h2 class="title__detailed">Meio Ambiente</h2>						
+						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
 					</div>
 				</div>
-				<div id="teoria" class="curso-detalhado hide">
-					<div class="texto-detalhado">
-						<h2 class="titulo-detalhado">Teoria e Prática sobre Eletrônica</h2>						
-						<p class="descricao-detalhado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
+				<div id="teoria" class="courses__detailed hide">
+					<div class="text__detailed">
+						<h2 class="title__detailed">Teoria e Prática sobre Eletrônica</h2>						
+						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-	<footer class="rodape">
-		<p class="rodape-texto">&copy; <a class="rodape-link-github" href="https://github.com/rodrigobarbonifilho">Feito por Rodrigo Barboni Filho</a></p>
+	<footer class="footer">
+		<p class="footer__text">&copy; <a class="footer__link" href="https://github.com/rodrigobarbonifilho">Feito por Rodrigo Barboni Filho</a></p>
 	</footer>
 </body>
 <script src="scripts/showDivs.js"></script>

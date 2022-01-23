@@ -44,7 +44,7 @@ const cards = {
 }
 
 function createCard() {
-    let divPrincipal = document.querySelector(".conteudo-principal-cursos");
+    let divPrincipal = document.querySelector(".js-courses__detailed");
 
     for (let [key, values] of Object.entries(cards)) {
         let divCardContainer = document.createElement("div");
@@ -59,13 +59,13 @@ function createCard() {
             divCardContainer.className += " center-grid";
         }        
         divCard.className = "card";
-        imgCard.className = "card-imagem";
+        imgCard.className = "card__image";
         imgCard.src = values.img;
-        tituloCard.className = "card-titulo card-texto";
+        tituloCard.className = "card__title";
         tituloCard.textContent = values.titulo;
-        descricaoCard.className = "card-descricao card-texto";
+        descricaoCard.className = "card__description";
         descricaoCard.textContent = values.descricao;
-        btnCard.className = "card-btn";
+        btnCard.className = "card__btn";
         btnCard.textContent = "Saber Mais";
         btnCard.addEventListener("click", function() {
             showDiv(values.id);
