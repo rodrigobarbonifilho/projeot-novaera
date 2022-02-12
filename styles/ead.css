@@ -1,0 +1,38 @@
+html {
+	overflow: hidden;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr;
+	height: 80vh;
+	background-color: var(--color04);
+}
+
+.svg-wrapper { 
+	position: relative;
+	justify-self: center;
+	align-self: center;
+	width: 650px;
+}
+
+.svg-wrapper img {
+	width: 100%;
+}
+
+.subscribe-area-wrapper {
+	justify-self: center;
+	align-self: top;
+	padding: 15px;
+	color: white;
+	width: 600px;
+}
+
+.subscribe-area-text-wrapper h1{
+	font-size: 4rem;
+}
+
+.subscribe-area-text-wrapper p {
+	font-size: 2rem;
+}
