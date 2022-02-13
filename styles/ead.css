@@ -1,38 +1,40 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
+	font-family: "Roboto", sans-serif;
 	overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 main {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 2fr 3fr;
 	height: 80vh;
-	background-color: var(--color04);
+	color: white;
+	background-image: url(../images/EAD/hero/background.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.svg-wrapper { 
-	position: relative;
+main img {
 	justify-self: center;
 	align-self: center;
-	width: 650px;
 }
 
-.svg-wrapper img {
-	width: 100%;
-}
-
-.subscribe-area-wrapper {
-	justify-self: center;
-	align-self: top;
-	padding: 15px;
-	color: white;
-	width: 600px;
-}
-
-.subscribe-area-text-wrapper h1{
+main div h1 {
 	font-size: 4rem;
 }
 
-.subscribe-area-text-wrapper p {
-	font-size: 2rem;
+main div p {
+	font-size: 3rem;
+	line-height: 1em;
+	text-indent: 1em;
 }

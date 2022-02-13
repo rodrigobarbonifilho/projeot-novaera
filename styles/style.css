@@ -282,15 +282,15 @@ Padrão da estilização (que eu vo tentar seguir):
   font-family: var(--normal-font);
   font-size: 1.8rem;
   text-align: center;
-  background-color: black;
+  background-color: var(--constrast-color);
 }
 
 .footer__text {
   font-weight: 600;
-  color: white;
+  color: black;
   padding: 1.5rem;
 }
 
 .footer__link {
-  color: white;
+  color: black;
 }
