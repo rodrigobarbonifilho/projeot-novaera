@@ -14,6 +14,30 @@
   --color01: #B8D9CA;
 }
 
+.bg-color-primary {
+  background-color: var(--color01);
+}
+
+.bg-color-secondary {
+  background-color: var(--color02);
+}
+
+.bg-color-third {
+  background-color: var(--color03);
+}
+
+.bg-color-fourth {
+  background-color: var(--color04);
+}
+
+.bg-color-fifth {
+  background-color: var(--color01);
+}
+
+.bg-contrast-color {
+  background-color: var(--contrast-color);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,10 +47,17 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
+  font-size: 50%;
+  height: 100vh;
 }
 
 body {
   font-family: "Catamaran", sans-serif;
   overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
 }
