@@ -73,7 +73,7 @@
 }
 
 #navbar .collapse-links.activate {
-	transform: translateY(0%);
+	transform: translateY(calc(0% + 9.5rem));
 	opacity: 1;
 }
 
