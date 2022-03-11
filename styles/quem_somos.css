@@ -79,51 +79,12 @@
 	#navbar {
 		position: relative;
 	}
-
-	#navbar .navbar__list {
-		flex-direction: row;
-	}
-
+	
 	#navbar .navbar__toggle {
 		display: none;
 	}
 
 	#navbar .collapse-links {
-		position: relative;
-		width: auto;
-		border: none;		
-		background-color: var(--contrast-color);
-		transform: translateY(0%);
-		opacity: 1;
-		background-color: transparent;
-	}
-
-	#navbar .navbar__li::after {
-		position: relative;
-	}
-
-	#navbar .navbar__link {
-		padding: 1px 8px;
-		border-radius: 15px 15px 0px 15px;
-		margin-left: 2.5rem;
-	}
-
-	#navbar .navbar__link:hover {
-		background-color: var(--color01);
-		transform: translateY(20px);
-	}
-}
-
-/* Arrumar os links no mobile e tentar fazer o efeito de jump nos links no desktop */
-
-@keyframes jump {
-	0% {
-		transform: translateY(0%);
-	}
-	50% {
-		transform: translateY(20%);
-	}
-	100% {
-		transform: translateY(0%);
+		position: absolute;
 	}
 }
