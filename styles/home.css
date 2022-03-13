@@ -29,7 +29,7 @@ Padrão da estilização (que eu vo tentar seguir):
   align-items: center;
   width: 100vw;
   height: 52rem;
-  background-image: url("../images/hero/hero-template.webp");
+  background-image: url("../images/Home/Hero/hero-template.webp");
   background-position: bottom left;
   background-attachment: fixed;
   background-size: cover;
@@ -193,36 +193,36 @@ Padrão da estilização (que eu vo tentar seguir):
 }
 
 #retroescavadeira {
-  background-image: url("../images/detalhada/escavadeira.webp");
+  background-image: url("../images/Home/Fotos-Detalhadas/escavadeira.webp");
   background-position: center left;
 }
 
 #solda {
-  background-image: url("../images/detalhada/solda.webp");
+  background-image: url("../images/Home/Fotos-Detalhadas/solda.webp");
   background-position: center center;
   background-size: cover;
 }
 
 #empilhadeira {
-  background-image: url("../images/detalhada/empilhadeira.webp");
+  background-image: url("../images/Home/Fotos-Detalhadas/empilhadeira.webp");
   background-position: top center;
 }
 
 #formacao {
-  background-image: url("../images/detalhada/mecanico-florestal.webp");
+  background-image: url("../images/Home/Fotos-Detalhadasmecanico-florestal.webp");
   background-size: cover;
 }
 
 #teoria {
-  background-image: url("../images/detalhada/teoria-pratica.webp")
+  background-image: url("../images/Home/Fotos-Detalhadas/teoria-pratica.webp")
 }
 
 #maquinas-florestais {
-  background-image: url("../images/detalhada/maquina-florestal.webp");
+  background-image: url("../images/Home/Fotos-Detalhadas/maquina-florestal.webp");
 }
 
 #empresa {
-  background-image: url("../images/detalhada/floresta.webp");
+  background-image: url("../images/Home/Fotos-Detalhadas/floresta.webp");
 }
 
 .hide {

@@ -7,25 +7,33 @@
 	<link rel="stylesheet" href="styles/global.css">
     <title>EAD</title>
 
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/global.css">
 	<link rel="stylesheet" href="styles/ead.css">
-
+	<link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
-	<header class="header">
-		<a href="index.html"><img class="header__logo" src="images/logo-novaera.webp" alt="Logo da Nova Era - Treinamentos"></a>
-		<nav>
-			<ul class="header__nav__list">
-				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="index.html">HOME</a></li>
-				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="quem-somos.html">QUEM SOMOS</a></li>
-				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="index.html#courses">CURSOS</a></li>
-				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="ead.html">EAD</a></li>
-				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="servicos.html">SERVIÇOS</a></li>
-				<li class="header__nav__list__item"><a target="_self" class="header__nav__list__item__link" href="contato.html">CONTATO</a></li>
-			</ul>
-		</nav>
-	</header>
+	<!-- NAVBAR -->
+	<nav id="navbar" class="bg-contrast-color">
+		<div class="navbar-container">
+			<a href="index.html">
+				<img class="navbar__logo" src="images/logo-novaera.webp" alt="Logo da NovaEra">
+			</a>
+			<div class="navbar__toggle" id="navbar__toggle-js">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="collapse-links bg-color-primary" id="collapse-links-js">
+				<ul class="navbar__list">
+					<li class="navbar__li"><a href="index.html" class="navbar__link active-link">Home</a></li>
+					<li class="navbar__li"><a href="quem-somos.html" class="navbar__link">Quem Somos</a></li>
+					<li class="navbar__li"><a href="#cursos" class="navbar__link">Cursos</a></li>
+					<li class="navbar__li"><a href="ead.html" class="navbar__link">Ead</a></li>
+					<li class="navbar__li"><a href="servicos.html" class="navbar__link">Serviços</a></li>
+					<li class="navbar__li"><a href="contato.html" class="navbar__link">Contato</a></li>
+				</ul>	
+		</div>
+	</nav>
 
 	<main>
 		<img src="images/EAD/hero/Mapa.svg" alt="">
@@ -49,4 +57,5 @@
 		<p class="footer__text">&copy; <a class="footer__link" href="https://github.com/rodrigobarbonifilho">Feito por Rodrigo Barboni Filho</a></p>
 	</footer>
 </body>
+<script src="scripts/activate_toggle_button.js"></script>
 </html>
