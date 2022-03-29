@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
-html {
+/* HTML */
+html { 
+	overflow: hidden;
 }
 
-/* Main Content */
+/* NAVBAR */
+#navbar {
+	z-index: 998;
+}
 
 /* Indicators */
 .indicators-wrapper {
