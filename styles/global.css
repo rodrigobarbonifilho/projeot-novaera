@@ -86,19 +86,6 @@ body {
 }
 
 .container-fluid:nth-child(odd) {
-  background-color: var(--color05);
+  background-color: var(--color02);
   color: white;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  margin: auto;
-  width: 80%;
-}
-
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: repeat(4, 3fr);
-  }
 }
