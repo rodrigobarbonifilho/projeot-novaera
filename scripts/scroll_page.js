@@ -1,5 +1,6 @@
 const indicators = document.querySelectorAll(".indicator");
 const nav = document.getElementById("navbar");
+const navY = nav.getBoundingClientRect().y;
 const previewLink = document.querySelectorAll("#preview-content-js");
 
 // Mudando de acordo com os indicadores de cada container
@@ -7,7 +8,8 @@ indicators.forEach((indicator) => { // Adiciona um evento para cada indicador
     indicator.addEventListener("click", () => {
         let targetContainer = indicator.firstElementChild.attributes["href"]; // Pego a posição Y do container
         let targetContainerY = getPos(targetContainer);
-        let navY = nav.getBoundingClientRect().y;
+
+        console.log(targetContainer.value);
 
         if (targetContainer.value === "#info-container") {
             window.scrollBy(0, navY);
@@ -17,13 +19,11 @@ indicators.forEach((indicator) => { // Adiciona um evento para cada indicador
     })
 })
 
-// Mudando de acordo com os previews container
+// Mudando de acordo com os textos que indicam o conteúdo do próximo container
 previewLink.forEach((link) => {
     link.addEventListener("click", () => {
         let targetContainer = link.attributes["target"];
-        console.log(targetContainer.value);
         let targetContainerY = getPos(targetContainer);
-        let navY = nav.getBoundingClientRect().y;
 
         if (targetContainer.value === "#info-container") {
             window.scrollBy(0, navY);
