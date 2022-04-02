@@ -37,13 +37,18 @@
 	<!-- MAIN CONTENT -->
 	<main id="main-content">
 		<!-- 1º Container -->
-		<div class="container-fluid" id="info-container">
+		<div class="container-fluid" id="info-container" next="O que é a NOVA ERA">
 			<div class="container">
+				<!-- Indicators -->
 				<div class="indicators-wrapper">
-					<div class="indicator active"><a href="#info-container">Informações sobre a Nova Era</a></div>
+					<div class="indicator active"><a href="#info-container">Informações sobre a NOVA ERA</a></div>
 					<div class="indicator"><a href="#who-we-are-container">O que é a NOVA ERA</a></div>
 					<div class="indicator"><a href="#how-we-merged-container">Como a NOVA ERA surgiu</a></div>
 					<div class="indicator"><a href="#our-goal-container">Como pretendemos mudar isso</a></div>
+				</div>
+				<!-- Next Content Preview -->
+				<div class="preview-content next" id="preview-content-js" target="#who-we-are-container">
+					<span>O que é a NOVA ERA</span><ion-icon name="chevron-down-outline"></ion-icon>
 				</div>
 			</div>
 		</div>
@@ -51,11 +56,20 @@
 		<!-- 2º Container -->
 		<div class="container-fluid" id="who-we-are-container">
 			<div class="container">
+				<!-- Previous Content Preview-->
+				<div class="preview-content previous" id="preview-content-js" target="#info-container">
+					<span>Informações sobre a NOVA ERA</span><ion-icon name="chevron-up-outline"></ion-icon>
+				</div>
+				<!-- Indicators -->
 				<div class="indicators-wrapper">
-					<div class="indicator"><a href="#info-container">Informações sobre a Nova Era</a></div>
+					<div class="indicator"><a href="#info-container">Informações sobre a NOVA ERA</a></div>
 					<div class="indicator active"><a href="#who-we-are-container">O que é a NOVA ERA</a></div>
 					<div class="indicator"><a href="#how-we-merged-container">Como a NOVA ERA surgiu</a></div>
 					<div class="indicator"><a href="#our-goal-container">Como pretendemos mudar isso</a></div>
+				</div>
+				<!-- Next Content Preview-->
+				<div class="preview-content next" id="preview-content-js" target="#how-we-merged-container">
+					<span>Como a NOVA ERA surgiu</span><ion-icon name="chevron-down-outline"></ion-icon>
 				</div>
 			</div>
 		</div>
@@ -63,11 +77,20 @@
 		<!-- 3º Container -->
 		<div class="container-fluid" id="how-we-merged-container">
 			<div class="container">
+				<!-- Previous Content Preview-->
+				<div class="preview-content previous" id="preview-content-js" target="#who-we-are-container">
+					<span>O que é a NOVA ERA</span><ion-icon name="chevron-up-outline"></ion-icon>
+				</div>
+				<!-- Indicators -->
 				<div class="indicators-wrapper">
-					<div class="indicator"><a href="#info-container">Informações sobre a Nova Era</a></div>
+					<div class="indicator"><a href="#info-container">Informações sobre a NOVA ERA</a></div>
 					<div class="indicator"><a href="#who-we-are-container">O que é a NOVA ERA</a></div>
 					<div class="indicator active"><a href="#how-we-merged-container">Como a NOVA ERA surgiu</a></div>
 					<div class="indicator"><a href="#our-goal-container">Como pretendemos mudar isso</a></div>
+				</div>
+				<!-- Next Content Preview-->
+				<div class="preview-content next" id="preview-content-js" target="#our-goal-container">
+					<span>Como pretendemos mudar isso</span><ion-icon name="chevron-down-outline"></ion-icon>
 				</div>
 			</div>
 		</div>
@@ -75,8 +98,13 @@
 		<!-- 4º Container -->
 		<div class="container-fluid" id="our-goal-container">
 			<div class="container">
+				<!-- Previous Content Preview-->
+				<div class="preview-content previous" id="preview-content-js" target="#how-we-merged-container">
+					<span>Como a NOVA ERA surgiu</span><ion-icon name="chevron-up-outline"></ion-icon>
+				</div>
+				<!-- Indicators -->
 				<div class="indicators-wrapper">
-					<div class="indicator"><a href="#info-container">Informações sobre a Nova Era</a></div>
+					<div class="indicator"><a href="#info-container">Informações sobre a NOVA ERA</a></div>
 					<div class="indicator"><a href="#who-we-are-container">O que é a NOVA ERA</a></div>
 					<div class="indicator"><a href="#how-we-merged-container">Como a NOVA ERA surgiu</a></div>
 					<div class="indicator active"><a href="#our-goal-container">Como pretendemos mudar isso</a></div>
@@ -86,6 +114,11 @@
 
 	</main>
 </body>
+<!-- My scripts -->
 <script src="scripts/activate_toggle_button.js"></script>
 <script src="scripts/scroll_page.js"></script>
+
+<!-- Ion-Icon -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
