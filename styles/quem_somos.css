@@ -72,7 +72,7 @@ html {
 /* Containers */
 .container {
 	width: 100%;
-	margin: 0px 15px;
+	margin: 0px 30px;
 }
 
 #main-content .container {
@@ -117,4 +117,34 @@ html {
 
 .next { 
 	grid-row-start: 3;
+}
+
+/* Texts */
+.text-container {
+	grid-row-start: 2;
+	align-self: center;
+}
+
+.title {
+	font-size: 3.5rem;
+}
+
+.topic {
+	font-size: 2.8rem;
+}
+
+.subtopic {
+	text-indent: 1.6rem;
+	font-size: 2.3rem;
+}
+
+.text {
+	text-indent: 1.6rem;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	width: calc(100vw/1.5);
+}
+
+.subtopic + .text {
+	text-indent: 3.2rem;
 }
