@@ -82,9 +82,8 @@ html {
 	grid-template-columns: 1fr;
 }
 
-#main-content .container-fluid:nth-child(1) {
-	background-image: url("/background-first-container.jpg");
-	background-repeat: no-repeat;
+#main-content #info-container {
+	background-image: url("/images/Quem Somos/Mobile/informacoes_container.jpg");
 	background-size: cover;
 }
 
