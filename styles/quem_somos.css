@@ -82,7 +82,7 @@ html {
 	grid-template-columns: 1fr;
 }
 
-#main-content #info-container {
+#info-container {
 	background-image: url("/images/Quem Somos/Mobile/informacoes_container.jpg");
 	background-size: cover;
 }
