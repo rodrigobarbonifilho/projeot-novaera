@@ -9,13 +9,7 @@ indicators.forEach((indicator) => { // Adiciona um evento para cada indicador
         let targetContainer = indicator.firstElementChild.attributes["href"]; // Pego a posição Y do container
         let targetContainerY = getPos(targetContainer);
 
-        console.log(targetContainer.value);
-
-        if (targetContainer.value === "#info-container") {
-            window.scrollBy(0, navY);
-        } else {
-            window.scrollBy(0, targetContainerY); // Faço a tela dar um scroll até aquela posição
-        }
+        window.scrollBy(0, targetContainerY); // Faço a tela dar um scroll até aquela posição
     })
 })
 
@@ -25,11 +19,7 @@ previewLink.forEach((link) => {
         let targetContainer = link.attributes["target"];
         let targetContainerY = getPos(targetContainer);
 
-        if (targetContainer.value === "#info-container") {
-            window.scrollBy(0, navY);
-        } else {
-            window.scrollBy(0, targetContainerY);
-        }
+        window.scrollBy(0, targetContainerY);
     })
 })
 
