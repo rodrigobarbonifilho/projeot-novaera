@@ -82,16 +82,6 @@ html {
 	grid-template-columns: 1fr;
 }
 
-#info-container {
-	background-image: url("/images/Quem Somos/Mobile/teste.jpg");
-	background-size: cover;
-}
-
-#who-we-are-container {
-	background-image: url("/images/Quem Somos/Mobile/teste.jpg");
-	background-size: cover;
-}
-
 /* Preview Content */
 .preview-content {
 	font-weight: 800;
