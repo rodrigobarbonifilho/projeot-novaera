@@ -58,7 +58,7 @@ html {
 	width: 100%;
 	height: 100vh;
 	scroll-snap-align: center;
-	box-shadow: inset 5px 5px 32px 16px black;
+	box-shadow: inset 5px 5px 32px 4px rgba(0, 0, 0, 0.6);
 }
 
 #main-content .container-fluid:nth-child(even) {
@@ -93,11 +93,6 @@ html {
 	cursor: pointer;
 }
 
-.preview-content::selection {
-	cursor: pointer;
-	background-color: transparent;
-}
-
 .preview-content span {
 	align-self: center;
 }
@@ -122,6 +117,7 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
+	overflow: hidden;
 }
 
 .title {
@@ -166,12 +162,15 @@ html {
 	background-size: cover;
 }
 
+
 /* How we merged Container */
 #how-we-merged-container {
-
+	background-image: url(../images/about/celular/como-a-novaera-surgiu.png);
+	background-size: cover;
 }
 
 /* Our goal Container */
 #our-goal-container {
-
+	background-image: url(../images/about/celular/objetivo.png);
+	background-size: cover;
 }
