@@ -65,6 +65,10 @@ html {
 	background-color: gray;
 }
 
+#main-content .container-fluid:nth-child(1) {
+	height: calc(100vh - 72px);
+}
+
 /* Containers */
 .container {
 	width: 100%;
@@ -113,7 +117,11 @@ html {
 
 /* Texts */
 .text-container {
-	grid-row-start: 2;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
 }
 
 .title {
@@ -146,34 +154,16 @@ html {
 /* Containers (Specifics) */
 /* Info Container */
 #info-container {
-	height: calc(100vh - 72px);
-	scroll-snap-align: none;
-	background-image: url(../images/about/celular/teste.jpg);
+	background-image: url(../images/about/celular/informacoes.jpg);
+	height: 2vh;
 	background-size: cover;
+	scroll-snap-align: none;
 }
 
 /* Who we are Container */
 #who-we-are-container {
 	background-image: url(../images/about/celular/o-que-e-a-novaera.jpg);
-}
-
-#who-we-are-container .text-container {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	height: 100%;
-}
-
-#who-we-are-container .title {
-	justify-self: auto;
-}
-
-#who-we-are-container .text-container {
-	align-self: center;
-}
-
-#who-we-are-container .text {
-	margin-top: 20px;
+	background-size: cover;
 }
 
 /* How we merged Container */
