@@ -61,13 +61,6 @@ html {
 	box-shadow: inset 5px 5px 32px 16px black;
 }
 
-#main-content #info-container {
-	height: calc(100vh - 72px);
-	scroll-snap-align: none;
-	background-image: url(../images/about/celular/teste.jpg);
-	background-size: cover;
-}
-
 #main-content .container-fluid:nth-child(even) {
 	background-color: gray;
 }
@@ -121,11 +114,11 @@ html {
 /* Texts */
 .text-container {
 	grid-row-start: 2;
-	align-self: center;
 }
 
 .title {
 	font-size: 3.5rem;
+	text-align: center;
 }
 
 .topic {
@@ -148,4 +141,47 @@ html {
 
 .subtopic + .text {
 	text-indent: 3.2rem;
+}
+
+/* Containers (Specifics) */
+/* Info Container */
+#info-container {
+	height: calc(100vh - 72px);
+	scroll-snap-align: none;
+	background-image: url(../images/about/celular/teste.jpg);
+	background-size: cover;
+}
+
+/* Who we are Container */
+#who-we-are-container {
+	background-image: url(../images/about/celular/o-que-e-a-novaera.jpg);
+}
+
+#who-we-are-container .text-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+#who-we-are-container .title {
+	justify-self: auto;
+}
+
+#who-we-are-container .text-container {
+	align-self: center;
+}
+
+#who-we-are-container .text {
+	margin-top: 20px;
+}
+
+/* How we merged Container */
+#how-we-merged-container {
+
+}
+
+/* Our goal Container */
+#our-goal-container {
+
 }

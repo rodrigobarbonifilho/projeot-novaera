@@ -83,8 +83,5 @@ body {
 
 .container-fluid {
   width: 100%;
-}
-
-.container-fluid:nth-child(odd) {
   color: white;
 }
