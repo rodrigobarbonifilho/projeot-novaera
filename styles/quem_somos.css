@@ -121,25 +121,25 @@ html {
 }
 
 .title {
-	font-size: 3.5rem;
+	font-size: 4rem;
 	text-align: center;
 }
 
 .topic {
-	font-size: 2.8rem;
+	font-size: 3.3rem;
 	margin-top: 20px;
 }
 
 .subtopic {
 	text-indent: 1.6rem;
-	font-size: 2.3rem;
+	font-size: 3.3rem;
 	margin-top: 5px;
 }
 
 .text {
 	text-indent: 1.6rem;
-	font-size: 2rem;
-	line-height: 2.5rem;
+	font-size: 3rem;
+	line-height: 3rem;
 	width: calc(100vw/1.5);
 }
 
@@ -151,9 +151,7 @@ html {
 /* Info Container */
 #info-container {
 	background-image: url(../images/about/celular/informacoes.jpg);
-	height: 2vh;
 	background-size: cover;
-	scroll-snap-align: none;
 }
 
 /* Who we are Container */
