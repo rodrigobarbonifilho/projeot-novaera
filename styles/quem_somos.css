@@ -67,6 +67,12 @@ html {
 	height: calc(100vh - 72px);
 }
 
+@media (min-width: 768px) {
+	#main-content .container-fluid:nth-child(1) {
+		height: calc(100vh - 95px);
+	}
+}
+
 /* Containers */
 .container {
 	position: relative;
@@ -120,25 +126,25 @@ html {
 }
 
 .title {
-	font-size: 4rem;
+	font-size: 3.5rem;
 	text-align: center;
 	justify-self: flex-start;
 }
 
 .topic {
-	font-size: 3.3rem;
+	font-size: 2.5rem;
 	margin-top: 20px;
 }
 
 .subtopic {
 	text-indent: 1.6rem;
-	font-size: 3.3rem;
+	font-size: 2.8rem;
 	margin-top: 5px;
 }
 
 .text {
 	text-indent: 1.6rem;
-	font-size: 3rem;
+	font-size: 2rem;
 	line-height: 3rem;
 	width: calc(100vw/1.5);
 }
@@ -171,6 +177,18 @@ html {
 
 @media (min-width: 768px) {
 	#info-container {
-		background-image: url(asd);
+		background-image: url(../images/about/PC/informacoes.jpg);
+	}
+
+	#who-we-are-container {
+		background-image: url(../images/about/PC/o-que-e-a-novaera-container.png);
+	}
+
+	#how-we-merged-container {
+		background-image: url(../images/about/PC/como-a-novaera-surgiu.png);
+	}
+
+	#our-goal-container {
+		background-image: url(../images/about/PC/objetivo.png);
 	}
 }
