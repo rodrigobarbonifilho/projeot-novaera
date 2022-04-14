@@ -61,27 +61,20 @@ html {
 	box-shadow: inset 5px 5px 32px 4px rgba(0, 0, 0, 0.6);
 }
 
-#main-content .container-fluid:nth-child(even) {
-	background-color: gray;
-}
-
 #main-content .container-fluid:nth-child(1) {
+	scroll-snap-align: none;
 	height: calc(100vh - 72px);
 }
 
 /* Containers */
 .container {
-	width: 100%;
-	margin: 0px 30px;
-}
-
-#main-content .container {
 	position: relative;
 	display: grid;
 	grid-template-rows: 0.1fr 1fr 0.1fr;
 	grid-template-columns: 1fr;
+	width: 100%;
+	margin: 0px 30px;
 }
-
 
 /* Preview Content */
 .preview-content {
@@ -115,8 +108,14 @@ html {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	align-self: top;
+	height: 70%;
+	justify-content: space-evenly;
 	overflow: hidden;
+}
+
+.text-container:nth-child(1) {
+	height: 100%;
 }
 
 .title {
