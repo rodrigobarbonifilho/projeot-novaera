@@ -59,6 +59,7 @@ html {
 	height: 100vh;
 	scroll-snap-align: center;
 	box-shadow: inset 5px 5px 32px 4px rgba(0, 0, 0, 0.6);
+	background-size: cover;
 }
 
 #main-content .container-fluid:nth-child(1) {
@@ -150,24 +151,26 @@ html {
 /* Info Container */
 #info-container {
 	background-image: url(../images/about/celular/informacoes.jpg);
-	background-size: cover;
 }
 
 /* Who we are Container */
 #who-we-are-container {
 	background-image: url(../images/about/celular/o-que-e-a-novaera.jpg);
-	background-size: cover;
 }
 
 
 /* How we merged Container */
 #how-we-merged-container {
-	background-image: url(../images/about/celular/como-a-novaera-surgiu.png);
-	background-size: cover;
+	background-image: url(../images/about/celular/como-a-novaera-surgiu.jpg);
 }
 
 /* Our goal Container */
 #our-goal-container {
-	background-image: url(../images/about/celular/objetivo.png);
-	background-size: cover;
+	background-image: url(../images/about/celular/objetivo.jpg);
+}
+
+@media (min-width: 768px) {
+	#info-container {
+		background-image: url(asd);
+	}
 }
