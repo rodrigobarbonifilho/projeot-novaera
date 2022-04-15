@@ -118,8 +118,17 @@ html {
 .text-container {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	grid-row-start: 2;
 	overflow: hidden;
+}
+
+#info-container .text-container div {
+	transform: translateY(0%);
+}
+
+.text-container div {
+	transform: translateY(-25%);
 }
 
 .title {
@@ -127,12 +136,6 @@ html {
 	font-weight: bolder;
 	text-align: center;
 	margin-top: 15px;
-	padding-bottom: calc(50vh/3.5);
-}
-
-#info-container .text-container .title,
-#how-we-merged-container .text-container .title {
-	padding-bottom: 0px;
 }
 
 .topic {
@@ -149,6 +152,10 @@ html {
 	font-size: 2rem;
 	line-height: 2.3rem;
 	width: calc(100vw/1.5);
+}
+
+#who-we-are-container .text {
+	width: calc(100vw/2)
 }
 
 .subtopic + .text {
