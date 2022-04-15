@@ -68,12 +68,6 @@ html {
 	height: calc(100vh - 72px);
 }
 
-@media (min-width: 768px) {
-	#main-content .container-fluid:nth-child(1) {
-		height: calc(100vh - 95px);
-	}
-}
-
 /* Containers */
 .container {
 	position: relative;
@@ -87,7 +81,7 @@ html {
 /* Preview Content */
 .preview-content {
 	font-weight: 800;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	display: flex;
 	justify-self: right;
 	color: white;
@@ -113,24 +107,14 @@ html {
 
 /* Texts */
 .text-container {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-self: top;
-	height: 70%;
-	justify-content: space-evenly;
+	grid-row-start: 2;
 	overflow: hidden;
 }
 
-.text-container:nth-child(1) {
-	height: 100%;
-}
-
 .title {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-weight: bolder;
 	text-align: center;
-	justify-self: flex-start;
 }
 
 .topic {
@@ -147,7 +131,7 @@ html {
 .text {
 	text-indent: 1.6rem;
 	font-size: 2rem;
-	line-height: 3rem;
+	line-height: 2.5rem;
 	width: calc(100vw/1.5);
 }
 
