@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+body {
+	font-family: Roboto;
+}
+
+.flex-center-align {
+	justify-content: center;
+	align-items: center;
+}
+
+/* Container */
+.container {
+	width: 100vw;
+	padding: 0 15px;
+}
+
+/* First Container */
+.first-container {
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	background-image: url(../images/Contato/background-1920x836.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+}
+
+.first-container .logo {
+	width: 100px;
+}
+
+.first-container .logo-text {
+	font-weight: 900;
+	font-style: italic;
+	font-size: 40px;
+	letter-spacing: -4px;
+	color: var(--color05);
+}
+
+/* Second Container */
+.second-container.container {
+	margin: 15px 0;
+}
+
+.second-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 10px;
+}
+
+.second-container__title {
+	font-size: 32px;
+}
+
+.second-container__text {
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Third Container */
+.third-container {
+	display: flex;
+	padding: 30px 0px;
+	background-image: linear-gradient(to right, #1A3126 -40%, #155939);
+}
+
+.contact-forms-wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.contact {
+	display: flex;
+	width: 270px;
+	height: 270px;
+	border-radius: 100%;
+	background-color: #22BB73;
+}
+
+/* Fourth Container */
+.fourth-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.bottom-detail {
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+
+.fourth-container h2 {
+	margin: 15px 0px;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+.form-wrapper {
+	width: 95%;
+	display: grid;
+	grid-template-columns: repeat(1fr, 6);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 7px;
+	grid-column: 1/6;
+	background-color: #1B8C57;
+	padding: 10px 15px;
+	border-radius: 10px;
+	transform: translateY(-15px);
+}
+
+.input-field {
+	font-weight: normal;
+	height: 45px;
+	padding: 5px;
+	border: solid 2px var(--color05);
+	border-radius: 10px;
+	color: white;
+	background-color: var(--color03);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textarea {
+	height: 120px;
+}
+
+.input-field:focus {
+	outline: 0;
+	border: solid 2px var(--color05);
+}
+
+.form-btn {
+	font-size: 24px;
+	font-weight: bold;
+	height: 65px;
+	border-radius: 10px;
+	border: none;
+	background-color: hsla(152, 62%, 22%, 0.70);
+	color: white;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25),
+							inset 4px 4px 16px rgba(255, 255, 255, 0.3),
+							inset -4px -4px 16px rgba(0, 0, 0, 0.75);
+}
+
+/* Footer */
+footer {
+	background-color: var(--contrast-color);
+}
+
+footer > p {
+	font-size: 16px;
+	padding: 15px 0px;
+	font-weight: bold;
+	text-align: center;
+}
