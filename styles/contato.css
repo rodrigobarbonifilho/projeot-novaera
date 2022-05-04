@@ -144,8 +144,10 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	overflow-x: hidden;
+	width: 100vw;
+	height: 120px;
 	z-index: -1;
+	background-color: var(--color05);
 }
 
 .fourth-container h2 {
