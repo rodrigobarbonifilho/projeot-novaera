@@ -52,6 +52,7 @@
 			</div>
 		</div>
 
+		<!-- Third Container -->
 		<div class="container third-container flex-center-align">
 			<div class="contacts-wrapper">
 				<div class="contact">
@@ -64,16 +65,20 @@
 		</div>
 
 		<!-- Fourth Container -->
-		<div class="fourth-container container flex-center-align">
-			<h2>Ou mande-a diretamente a nós</h2>
-			<div class="form-wrapper">				
-				<form action="" method="get" class="form">
-					<input type="text" value="Nome*" class="input-field">
-					<input type="email" value="Email*" class="input-field">
-					<input type="tel" value="Telefone*" class="input-field">
-					<input type="text" value="Cidade*" class="input-field">
-					<textarea class="input-field textarea" rows="5">Insira aqui a sua dúvida</textarea>
-					<button type="submit" class="form-btn">Enviar Dúvida</button>
+		<div class="fourth-container">
+			<h2>Ou mande-a para nós</h2>
+			<div class="form-container">
+				<form action="" method="get">
+					<div class="row">
+						<input type="text" name="username" id="username" value="Nome*" class="input">
+						<input type="email" name="email" id="email" value="Email*" class="input">
+					</div>
+					<div class="row">
+						<input type="tel" name="cellphone" id="cellphone" value="Telefone*" class="input">
+						<input type="text" name="city" id="city" value="Cidade*" class="input">
+					</div>
+					<textarea name="question" id="question" cols="30" rows="5" class="input" value="Dúvida" class="submit-question"></textarea>
+					<button type="submit" class="submit-question">Enviar Dúvida</button>
 				</form>
 			</div>
 			<div class="bottom-detail"></div>
