@@ -15,7 +15,7 @@
 	
 	<title>Página Inicial da Nova Era</title>
 </head>
-<body onload="createCard()">
+<body>
 	<!-- NAVBAR -->
 	<nav id="navbar" class="bg-contrast-color">
 		<div class="navbar-container">
@@ -49,53 +49,37 @@
 			</section>
 		</div>
 
-		<div class="courses">
-			<h2 id="courses" class="courses__title">Aqui você pode encontrar cursos sobre</h2>
-			<div class="courses__cards js-courses__detailed"></div>
-			<div class="courses_detailed">
-				<div id="retroescavadeira" class="courses__detailed hide">
-					<div class="text__detailed">
-						<h2 class="title__detailed">Retroescavadeira</h2>
-						<p class="description__detailed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis necessitatibus, sit quo sunt esse facere deserunt dolorem aliquam voluptatem eligendi soluta dolorum et, doloribus illo tempore amet repudiandae iste molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo, quidem, ratione, officia nulla commodi illum natus id error aliquam nisi? Totam, natus? Dolor assumenda nisi amet nemo sapiente eum?</p>
-					</div>
+		<div class="courses__title">
+			<h2 id="courses">Aqui você pode encontrar cursos sobre</h2>
+		</div>
+	
+		<div class="cards-container">
+			<!-- Curso de Operação de Máquinas Florestais-->
+			<div class="card">
+				<div class="img-wrapper">
+					<img src="images/Home/Cards/operacao-de-maquinas.jpg" alt="">
 				</div>
-				<div id="solda" class="courses__detailed hide">
-					<div class="text__detailed">
-						<h2 class="title__detailed">Soldas - Tig, Mig, Eletroudos e Massaricos</h2>
-						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, facere! Error, sunt exercitationem accusantium temporibus quae culpa. Eum voluptatibus repudiandae saepe error, repellat sint possimus rem ad doloribus expedita amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda natus repellat id dolores impedit illo soluta minima voluptate nobis, aspernatur placeat sint at repudiandae tempora unde error iure molestiae?</p>
-					</div>
-				</div>
-				<div id="empilhadeira" class="courses__detailed hide">
-					<div class="text__detailed">
-						<h2 class="title__detailed">Cursos e Treinamentos</h2>
-						<p class="description__detailed">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores dignissimos a officiis minus iste necessitatibus delectus praesentium, porro unde debitis suscipit harum! Ut natus minus eius iure veniam eveniet soluta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus perferendis cupiditate debitis quae doloribus a aut eum! Optio ad suscipit tenetur, commodi earum atque praesentium accusamus error iure distinctio!</p>
-					</div>
-				</div>
-				<div id="formacao" class="courses__detailed hide">
-					<div class="text__detailed">
-						<h2 class="title__detailed">Manutenção de Máquinas Florestais e Formação de Mecânicos Florestais</h2>
-						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
-					</div>
-				</div>
-				<div id="maquinas-florestais" class="courses__detailed hide">
-					<div class="text__detailed">
-						<h2 class="title__detailed">Máquinas Florestais</h2>						
-						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
-					</div>
-				</div>
-				<div id="empresa" class="courses__detailed hide">
-					<div class="text__detailed">
-						<h2 class="title__detailed">Meio Ambiente</h2>						
-						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
-					</div>
-				</div>
-				<div id="teoria" class="courses__detailed hide">
-					<div class="text__detailed">
-						<h2 class="title__detailed">Teoria e Prática sobre Eletrônica</h2>						
-						<p class="description__detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore illum, assumenda dolorem nobis qui quibusdam nemo maiores quasi commodi, praesentium eos, voluptatem accusamus autem laboriosam? Amet consectetur dolorum incidunt repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet facilis necessitatibus assumenda, consectetur aut repellat ea impedit, numquam omnis accusamus? Eveniet debitis inventore beatae odio. Perspiciatis quisquam officiis quo?</p>
+				<div class="card-text">
+					<h3 class="card-title">Operação de Máquinas Florestais</h3>
+					<p class="card-description">Em operação de Máquinas temos:</p>
+					<ol class="card-list">
+						<li>Harvester de Esteira</li>
+						<li>Forwarder</li>
+						<li>Retroescavadeira</li>
+						<li>Empilhadeira</li>
+						<li>NR11 Operação de Caminhão Grua</li>
+					</ol>
+					<div class="btn-wrapper">
+						<input type="button" value="Saiba Mais" class="know-more-btn">
 					</div>
 				</div>
 			</div>
+
+			<!-- Curso de Manuntenção de Máquinas voltadas para uso florestal-->
+			<div class="card"></div>
+
+			<!-- Solda -->
+			<div class="card"></div>
 		</div>
 	</main>
 
