@@ -30,7 +30,7 @@ Padrão da estilização (que eu vo tentar seguir):
   width: 100vw;
   height: 35vh;
   background-image: url("../images/Home/Hero/hero-template.webp");
-	background-position: bottom left;
+	background-position: center center;
   background-size: cover;
 	background-repeat: no-repeat;
   box-shadow: inset 0rem 0.1rem 2rem 0rem black;
@@ -88,9 +88,9 @@ Padrão da estilização (que eu vo tentar seguir):
 .cards-container {
   display: flex;
 	flex-wrap: wrap;
+  justify-content: center;
 	gap: 15px;
-	justify-content: space-between;
-	width: 80%;
+	width: 100%;
   height: fit-content;
 	margin: 0 auto;
 	padding-bottom: 15px;
@@ -99,68 +99,76 @@ Padrão da estilização (que eu vo tentar seguir):
 .card {
 	display: flex;
 	flex-direction: column;
-	width: 90vw;
-	height: fit-content;
-	border-radius: 8px;
+  width: 80vw;
+  border-radius: 8px;
 	box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.196);
 }
 
-.card .img-wrapper { 
-	height: fit-content;
+.card-text {
+  font-family: "Catamaran";
+  font-weight: 500;
 }
 
 .card .img-wrapper img {
-	position: relative;
 	border-radius: 8px 8px 0px 0px;
-	width: 100%;
-}
-
-.card-text {
-	transform: translateY(-5px);
+  height: 100%;
+  width: 100%;
 }
 
 .card-title {
-	position: relative;
+  text-align: center;
 	color: white;
-	font-size: 2.5rem;
-	padding: 0px 10px;
-	background-color: var(--color04);
-}
-
-.card-title::before {
-	opacity: 0.5;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 15px;
-	height: 100%;
-	background: var(--color02);
+	font-size: 2.6rem;
+  padding: 0 10px;
+	background-image: linear-gradient(to left, var(--color05), var(--color04), var(--color05));
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.161);
 }
 
 .card-description {
 	font-size: 1.8rem;
-	padding: 0px 10px;
-	transform: translateY(3px);
+	padding: 15px 15px;
+}
+.card-description p {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .card-list {
-	padding: 0px 5px;
-	font-size: 1.8rem;
-	padding: 0px 20px;
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.card-list {
+  position: relative;
+}
+
+.card-list li {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  padding-left: 20px;
+}
+
+.list-marker {
+  position: absolute;
+  align-self: flex-start;
+  width: 1.3rem;
+  transform: translate(-100%, 60%);
 }
 
 .btn-wrapper {
 	display: flex;
 	justify-content: center;
+  align-items: center;
 	width: 100%;
+  padding: 15px;
+  padding-top: 0;
 }
 
 .know-more-btn {
 	color: white;
 	background-color: var(--color03);
-	padding: 5px 15px;
-	margin: 0px auto;
+	padding: 8px 15px;
 	border: 0;
 	border-radius: 4px;
 }
