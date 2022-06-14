@@ -156,36 +156,88 @@ Padrão da estilização (que eu vo tentar seguir):
   transform: translateY(28%);
 }
 
-.btn-wrapper {
-	display: flex;
-	justify-content: center;
+.link-wrapper {
+  display: flex;
+  justify-content: center;
   align-items: center;
-	width: 100%;
-  padding: 15px;
-  padding-top: 0;
+  padding: 0px 15px 15px 15px;
 }
 
-.know-more-btn {
-	color: white;
-	background-color: var(--color03);
-	padding: 8px 15px;
-	border: 0;
-	border-radius: 4px;
-  box-shadow: 0px 3px 0px rgba(36, 36, 36, 0.552);
-}
-
-.know-more-btn:hover {
-  filter: brightness(0.95);
-}
-
-.know-more-btn:active {
-  box-shadow: 0px 1px 0px rgb(0, 0, 0);
-  transform: translateY(2px);
+.link-wrapper > a {
+  font-size: 1.8rem;
+  color: var(--color01);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.171);
+  padding: 5px 12px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+  background-color: var(--color03);
 }
 
 /* ================================== */
 /*          Courses Detailed          */
 /* ================================== */
+.detailed-courses > div {  
+  display: none;
+  width: 100vw;
+  height: max-content;
+  background-color: gray;
+}
+
+.detailed-courses > .visible {
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.2em;
+  padding: 30px;
+}
+
+.title-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title-content > h2 {
+  font-size: 4rem;
+  transform: translateY(-50%);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 auto;
+  background-color: rgba(128, 128, 128, 0.252);
+  padding: 15px;
+  border-radius: 16px;
+}
+
+.text h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text p {
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+}
+
+.text ol {
+  padding: 20px 40px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.346);
+}
+
+#solda {
+  background-image: url(../images/Home/Fotos-Detalhadas/solda.webp);
+  background-size: cover;
+}
 
 /* ================================== */
 /*               Footer               */
