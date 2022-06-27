@@ -206,6 +206,7 @@ ul {
   line-height: 1.2em;
   padding: 30px;
   padding-top: 0;
+  background-size: cover;
 }
 
 .title-content {
@@ -264,17 +265,29 @@ ul {
 
 #solda {
   background-image: url(../images/Home/Fotos-Detalhadas/solda.webp);
-  background-size: cover;
 }
 
 #harvester-de-esteira {
   background-image: url(../images/Home/Fotos-Detalhadas/celular/harvester-de-esteira.png);
-  background-size: cover;
+  background-position: center right;
 }
 
 #forwarder {
   background-image: url(../images/Home/Fotos-Detalhadas/celular/forwarder-celular.jpg);
-  background-size: cover;
+}
+
+#retroescavadeira {
+  background-image: url(../images/Home/Fotos-Detalhadas/celular/retroescavadeira-celular.jpg);
+  background-position: center right;
+}
+
+#empilhadeira {
+  background-image: url(../images/Home/Fotos-Detalhadas/empilhadeira.webp);
+}
+
+#caminhao-grua {
+  background-image: url(../images/Home/Fotos-Detalhadas/celular/caminhao-grua-celular.jpg);
+  background-position: center center;
 }
 
 /* ================================== */
