@@ -98,21 +98,30 @@ body {
 	border-radius: 100%;
 }
 
-.contact:nth-child(1) > img {
-	width: 60%;
+.contact img {
+	position: absolute;
+	transition: 0.3s ease-in;
+	width: 40%;
 }
 
-.contact:nth-child(2) > img {
-	width: 70%;
+.contact ul {
+	list-style: none;
+	font-size: 2.5rem;
+	color: white;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	opacity: 0;
+	transition: 0.3s ease-out;
 }
 
-.contact > img {
-  transition: 0.3s ease-in-out;
+.contact:hover img {
+	opacity: 0;
 }
 
-.contact:hover > img {
-  position: absolute;
-  opacity: 0;
+.contact:hover ul {
+	opacity: 1;
 }
 
 /* Fourth Container */

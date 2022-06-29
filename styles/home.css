@@ -203,8 +203,7 @@ ul {
   font-size: 2rem;
   height: max-content;
   line-height: 1.2em;
-  padding: 30px;
-  padding-top: 0;
+  padding: 30px 0;
   background-size: cover;
   box-shadow: inset 0px 0px 16px 0px black;
 }
@@ -248,16 +247,12 @@ ul {
   font-weight: 500;
 }
 
+.text-contrast {
+  color: var(--color01);
+}
+
 #solda .text ul li {
   text-align: left;
-}
-
-.text ul li {
-  text-align: left;
-}
-
-.content:nth-child(even) .text ul li {
-  text-align: right;
 }
 
 #solda {
