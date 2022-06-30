@@ -251,6 +251,10 @@ ul {
   color: var(--color01);
 }
 
+.sublist {
+  text-indent: 2rem;
+}
+
 #solda .text ul li {
   text-align: left;
 }
@@ -270,6 +274,7 @@ ul {
 
 #forwarder-op {
   background-image: url(../images/Home/Fotos-Detalhadas/celular/forwarder-celular.jpg);
+  background-position: center bottom;
 }
 
 #retroescavadeira-op {
