@@ -1,0 +1,24 @@
+footer {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 15px 0;
+    background-color: rgb(38, 38, 38);
+}
+
+footer p {
+    font-family: "Catamaran", sans-serif;
+    font-size: 2rem;
+}
+
+footer p a {
+    color: white;
+    font-weight: bolder;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}

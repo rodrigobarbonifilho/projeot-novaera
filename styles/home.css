@@ -290,23 +290,3 @@ ul {
   background-image: url(../images/Home/Fotos-Detalhadas/celular/caminhao-grua-celular.jpg);
   background-position: center center;
 }
-
-/* ================================== */
-/*               Footer               */
-/* ================================== */
-.footer {
-  font-family: var(--normal-font);
-  font-size: 1.8rem;
-  text-align: center;
-  background-color: rgb(38, 38, 38);
-}
-
-.footer__text {
-  color: white;
-  font-weight: 600;
-  padding: 1.5rem;
-}
-
-.footer__link {
-  color: white;
-}
