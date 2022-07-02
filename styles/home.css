@@ -101,6 +101,7 @@ ul {
   justify-content: center;
 	gap: 15px;
 	width: 100%;
+  padding: 15px;
   height: fit-content;
 	margin: 0 auto;
 	padding-bottom: 15px;
@@ -289,4 +290,42 @@ ul {
 #caminhao-grua-op {
   background-image: url(../images/Home/Fotos-Detalhadas/celular/caminhao-grua-celular.jpg);
   background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+  
+  .card {
+    width: 40vw;
+  }
+
+  .img-wrapper img {
+    width: 100%;
+  }
+
+  .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    height: 8rem;
+  }
+
+  .card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;
+  }
+
+  .link-wrapper {
+    display: flex;
+    align-items: flex-end;
+    height: max-content;
+    text-align: center;
+  }
 }
