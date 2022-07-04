@@ -100,36 +100,25 @@ ul {
 	flex-wrap: wrap;
   justify-content: center;
 	gap: 15px;
-	width: 100%;
-  padding: 15px;
-  height: fit-content;
-	margin: 0 auto;
-	padding-bottom: 15px;
+  padding: 0px 15px 15px 15px;
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
-  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
   border-radius: 8px;
 	box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.196);
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
+.card img {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
 }
 
 .card-text {
   font-family: "Catamaran";
   font-weight: 500;
-}
-
-.card .img-wrapper img {
-	border-radius: 8px 8px 0px 0px;
-  height: 100%;
-  width: 100%;
 }
 
 .card-title {
@@ -142,12 +131,18 @@ ul {
 }
 
 .card-description {
-	font-size: 1.8rem;
+  min-height: 250px;
+  font-size: 1.8rem;
 	padding: 15px 15px;
 }
+
 .card-description p {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.card-description ul {
+  align-self: center;
 }
 
 .card-list {
@@ -155,20 +150,15 @@ ul {
   font-size: 1.8rem;
 }
 
-.card-list {
-  position: relative;
-}
-
 .card-list li {
   display: flex;
-  padding-left: 20px;
+  line-height: 2rem;
 }
 
 .list-marker {
   align-self: flex-start;
   height: 1.8rem;
   font-size: 1.8rem;
-  transform: translateY(28%);
 }
 
 .link-wrapper {
