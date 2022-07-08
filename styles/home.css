@@ -137,12 +137,9 @@ ul {
 }
 
 .card-description p {
+  text-align: center;
   font-size: 2rem;
   font-weight: 700;
-}
-
-.card-description ul {
-  align-self: center;
 }
 
 .card-list {
@@ -333,6 +330,51 @@ ul {
 
   .card {
     width: 40vw;
+  }
+
+  .card-title {
+    padding: 2px 8px;
+  }
+
+  .link-wrapper {
+    align-items: flex-end;
+    height: fit-content;
+    text-align: center;
+    padding: 0px 15px 15px 15px;
+  }
+
+  .link-wrapper > a {
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.171);
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+    background-color: var(--color03);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* ================================== */
+  /*          Principal Hero            */
+  /* ================================== */
+  .hero {
+    height: 75vh;
+  }
+  
+  /* ================================== */
+  /*                Card                */
+  /* ================================== */
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100vw;
+    padding: 0 15px 15px 15px;
+  }
+
+  .card {
+    width: 30vw;
   }
 
   .card-title {
