@@ -181,7 +181,12 @@ ul {
 .detailed-courses > div {  
   display: none;
   height: fit-content;
-  background-color: gray;
+  background-color: white;
+}
+
+.content:nth-child(odd) {
+  background-color: var(--color05);
+  color: white;
 }
 
 .detailed-courses > .visible {
@@ -197,21 +202,19 @@ ul {
   font-size: 2rem;
   height: max-content;
   line-height: 1.2em;
-  padding: 30px 0;
   background-size: cover;
   box-shadow: inset 0px 0px 16px 0px black;
 }
 
 .title-content {
   font-family: "Roboto", sans-serif;
-  text-align: center;
+  text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 2em;
   width: 100%;
   height: fit-content;
-  padding: 10px;
 }
 
 .title-content > h2 {
@@ -223,7 +226,6 @@ ul {
   flex-direction: column;
   width: 85vw;
   height: max-content;
-  margin: 0 auto;
   background-color: rgba(122, 122, 122, 0.456);
   padding: 15px;
   border-radius: 16px;
@@ -247,6 +249,35 @@ ul {
 
 .sublist {
   text-indent: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.img-wrapper-course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.img-wrapper-course img {
+  width: 100%;
+}
+
+.add-info {
+  font-family: "Catamaran", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color02);
+  color: var(--color05);
+  align-self: flex-start;
 }
 
 #solda .text ul li {
@@ -378,6 +409,10 @@ ul {
   }
 
   .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
     padding: 2px 8px;
   }
 
@@ -396,5 +431,125 @@ ul {
     border-radius: 8px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
     background-color: var(--color03);
+  }
+}
+
+@media (min-width: 1200px) {
+  /* ================================== */
+  /*          Principal Hero            */
+  /* ================================== */
+  .hero__text__title {
+    font-size: 8rem;
+  }
+
+  .hero__text__paragraph {
+    font-size: 3rem;
+  }
+
+  .button-novidades {
+    font-size: 2.5rem;
+  }
+    
+  /* ================================== */
+  /*          Courses Detailed          */
+  /* ================================== */
+  .content {
+    font-size: 2rem;
+    min-height: 90vh;
+    background-size: cover;
+    box-shadow: inset 0px 0px 16px 0px black;
+  }
+
+  .title-content {
+    display: flex;
+    justify-content: flex-start;
+    line-height: 2em;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .title-content > h2 {
+    font-size: 5rem;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.383);
+    background-color: var(--color05);
+    color: white;
+  }
+
+  .content:nth-child(odd) > .title-content {
+    justify-content: flex-end;
+  }
+
+  .content:nth-child(odd) > .title-content > h2 {
+    border-radius: 15px 0 0 15px;
+    background-color: var(--color01);
+    color: var(--color05);
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: max-content;
+    background-color: rgba(122, 122, 122, 0.456);
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .text h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .text p {
+    text-align: center;
+    padding-bottom: 5px;
+    width: 100%;
+    font-weight: 500;
+  }
+
+  .text-contrast {
+    color: var(--color01);
+  }
+
+  .sublist {
+    text-indent: 2rem;
+  }
+
+  .add-info {
+  }
+
+  #solda .text ul li {
+    text-align: left;
+  }
+  
+  #solda {
+    background-image: none;
+    background-image: url(../images/Home/Fotos-Detalhadas/solda.webp);
+  }
+
+  #harvester-de-esteira-op {
+    background-image: none;
+    background-position: center right;
+  }
+
+  #forwarder-op {
+    background-image: none;
+    background-position: center bottom;
+  }
+
+  #retroescavadeira-op {
+    background-image: none;
+    background-position: center right;
+  }
+
+  #empilhadeira-op {
+    background-image: none;
+  }
+
+  #caminhao-grua-op {
+    background-image: none;
+    background-position: center center;
   }
 }
