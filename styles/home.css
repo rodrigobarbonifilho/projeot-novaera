@@ -184,11 +184,6 @@ ul {
   background-color: white;
 }
 
-.content:nth-child(odd) {
-  background-color: var(--color05);
-  color: white;
-}
-
 .detailed-courses > .visible {
   display: block;
 }
@@ -198,12 +193,17 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 20px 0;
   color: white;
   font-size: 2rem;
   height: max-content;
   line-height: 1.2em;
-  background-size: cover;
-  box-shadow: inset 0px 0px 16px 0px black;
+  background-size: contain;
+}
+
+.content:nth-child(odd) {
+  background-color: var(--color06);
+  color: white;
 }
 
 .title-content {
@@ -221,6 +221,12 @@ ul {
   font-size: 4rem;
 }
 
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -229,6 +235,10 @@ ul {
   background-color: rgba(122, 122, 122, 0.456);
   padding: 15px;
   border-radius: 16px;
+}
+
+.content:nth-last-child(even) .text {
+  background-color: #203c206f;
 }
 
 .text h3 {
@@ -254,30 +264,43 @@ ul {
 .row {
   display: flex;
   justify-content: space-around;
+  flex-direction: row-reverse;
   width: 100%;
+}
+
+.content:nth-last-child(even) .row {
+  flex-direction: row;
 }
 
 .img-wrapper-course {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  max-width: 650px;
+  margin: 15px 0;
 }
 
 .img-wrapper-course img {
   width: 100%;
+  filter: drop-shadow(4px 4px 16px rgba(0, 0, 0, 0.34));
 }
 
 .add-info {
   font-family: "Catamaran", sans-serif;
   font-size: 2.8rem;
   font-weight: bold;
-  margin-left: 20px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   background-color: var(--color02);
-  color: var(--color05);
+  color: var(--color06);
   align-self: flex-start;
+}
+
+.content:nth-last-child(even) .add-info {
+  align-self: flex-end;
+  border-radius: 10px 0 0 10px;
+  background-color: var(--color06);
+  color: white;
 }
 
 #solda .text ul li {
@@ -292,28 +315,12 @@ ul {
   height: 120vh;
 }
 
-#harvester-de-esteira-op {
-  background-image: url(../images/Home/Fotos-Detalhadas/celular/harvester-de-esteira.png);
-  background-position: center right;
+#harvester-esteira-op {
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/harvester-esteira/op-harvester-esteira-fundo.jpg")
 }
 
 #forwarder-op {
-  background-image: url(../images/Home/Fotos-Detalhadas/celular/forwarder-celular.jpg);
-  background-position: center bottom;
-}
-
-#retroescavadeira-op {
-  background-image: url(../images/Home/Fotos-Detalhadas/celular/retroescavadeira-celular.jpg);
-  background-position: center right;
-}
-
-#empilhadeira-op {
-  background-image: url(../images/Home/Fotos-Detalhadas/empilhadeira.webp);
-}
-
-#caminhao-grua-op {
-  background-image: url(../images/Home/Fotos-Detalhadas/celular/caminhao-grua-celular.jpg);
-  background-position: center center;
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/forwarder/op-forwarder-fundo.jpg");
 }
 
 @media (min-width: 768px) {
@@ -454,10 +461,7 @@ ul {
   /*          Courses Detailed          */
   /* ================================== */
   .content {
-    font-size: 2rem;
     min-height: 90vh;
-    background-size: cover;
-    box-shadow: inset 0px 0px 16px 0px black;
   }
 
   .title-content {
@@ -473,7 +477,7 @@ ul {
     padding: 20px;
     border-radius: 0 15px 15px 0;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.383);
-    background-color: var(--color05);
+    background-color: var(--color06);
     color: white;
   }
 
@@ -484,17 +488,19 @@ ul {
   .content:nth-child(odd) > .title-content > h2 {
     border-radius: 15px 0 0 15px;
     background-color: var(--color01);
-    color: var(--color05);
+    color: var(--color06);
   }
 
   .text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;  
     width: 600px;
     height: max-content;
-    background-color: rgba(122, 122, 122, 0.456);
     padding: 15px;
     border-radius: 16px;
+    background-color: rgba(122, 122, 122, 0.456);
   }
 
   .text h3 {
@@ -504,9 +510,9 @@ ul {
 
   .text p {
     text-align: center;
+    font-weight: 500;
     padding-bottom: 5px;
     width: 100%;
-    font-weight: 500;
   }
 
   .text-contrast {
@@ -515,41 +521,5 @@ ul {
 
   .sublist {
     text-indent: 2rem;
-  }
-
-  .add-info {
-  }
-
-  #solda .text ul li {
-    text-align: left;
-  }
-  
-  #solda {
-    background-image: none;
-    background-image: url(../images/Home/Fotos-Detalhadas/solda.webp);
-  }
-
-  #harvester-de-esteira-op {
-    background-image: none;
-    background-position: center right;
-  }
-
-  #forwarder-op {
-    background-image: none;
-    background-position: center bottom;
-  }
-
-  #retroescavadeira-op {
-    background-image: none;
-    background-position: center right;
-  }
-
-  #empilhadeira-op {
-    background-image: none;
-  }
-
-  #caminhao-grua-op {
-    background-image: none;
-    background-position: center center;
   }
 }
