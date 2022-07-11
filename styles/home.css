@@ -198,7 +198,8 @@ ul {
   font-size: 2rem;
   height: max-content;
   line-height: 1.2em;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .content:nth-child(odd) {
@@ -228,6 +229,7 @@ ul {
 }
 
 .text {
+  text-align: center;
   display: flex;
   flex-direction: column;
   width: 85vw;
@@ -321,6 +323,14 @@ ul {
 
 #forwarder-op {
   background-image: url("../images/Home/Fotos-Detalhadas/pc/forwarder/op-forwarder-fundo.jpg");
+}
+
+#retroescavadeira-op {
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/retroescavadeira/op-retroescavadeira-fundo.jpg");
+}
+
+#empilhadeira-op {
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/empilhadeira/op-empilhadeira-fundo.jpg");
 }
 
 @media (min-width: 768px) {
@@ -494,8 +504,6 @@ ul {
   .text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;  
     width: 600px;
     height: max-content;
     padding: 15px;
