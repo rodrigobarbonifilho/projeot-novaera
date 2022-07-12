@@ -213,7 +213,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 2em;
   width: 100%;
   height: fit-content;
 }
@@ -232,14 +231,16 @@ ul {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 85vw;
+  max-width: 600px;
   height: max-content;
+  margin-top: 15px;
   background-color: rgba(122, 122, 122, 0.456);
   padding: 15px;
   border-radius: 16px;
+  line-height: 2rem;
 }
 
-.content:nth-last-child(even) .text {
+#operacao-maquinas-florestais .content:nth-last-child(even) .text, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .text {
   background-color: #203c206f;
 }
 
@@ -255,6 +256,17 @@ ul {
   font-weight: 500;
 }
 
+.text ul {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.text .sublist {
+  font-weight: normal;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
 .text-contrast {
   color: var(--color01);
 }
@@ -268,9 +280,10 @@ ul {
   justify-content: space-around;
   flex-direction: row-reverse;
   width: 100%;
+  margin: 15px 0;
 }
 
-.content:nth-last-child(even) .row {
+#operacao-maquinas-florestais .content:nth-last-child(even) .row, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
   flex-direction: row;
 }
 
@@ -298,7 +311,7 @@ ul {
   align-self: flex-start;
 }
 
-.content:nth-last-child(even) .add-info {
+#operacao-de-maquinas-florestais .content:nth-last-child(even) .add-info, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .add-info{
   align-self: flex-end;
   border-radius: 10px 0 0 10px;
   background-color: var(--color06);
@@ -331,6 +344,10 @@ ul {
 
 #empilhadeira-op {
   background-image: url("../images/Home/Fotos-Detalhadas/pc/empilhadeira/op-empilhadeira-fundo.jpg");
+}
+
+#caminhao-grua-op {
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/caminhão-grua/op-caminhao-grua-fundo.jpg");
 }
 
 @media (min-width: 768px) {
@@ -504,7 +521,6 @@ ul {
   .text {
     display: flex;
     flex-direction: column;
-    width: 600px;
     height: max-content;
     padding: 15px;
     border-radius: 16px;
