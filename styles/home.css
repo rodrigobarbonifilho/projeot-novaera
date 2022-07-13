@@ -189,15 +189,15 @@ ul {
 }
 
 .content {
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 0;
-  color: white;
-  font-size: 2rem;
   height: max-content;
+  padding: 20px 0;
   line-height: 1.2em;
+  color: white;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -228,8 +228,7 @@ ul {
 }
 
 .text {
-  text-align: center;
-  display: flex;
+	display: flex;
   flex-direction: column;
   max-width: 600px;
   height: max-content;
@@ -241,7 +240,17 @@ ul {
 }
 
 #operacao-maquinas-florestais .content:nth-last-child(even) .text, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .text {
-  background-color: #203c206f;
+  background-color: #203c20b5;
+}
+
+li {
+	font-size: 1.6rem;
+	line-height: 2rem;
+}
+
+.list-topic {
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 .text h3 {
@@ -256,23 +265,13 @@ ul {
   font-weight: 500;
 }
 
-.text ul {
-  font-weight: bold;
-  font-size: 2.4rem;
-}
-
-.text .sublist {
-  font-weight: normal;
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-}
-
 .text-contrast {
   color: var(--color01);
 }
 
 .sublist {
   text-indent: 2rem;
+	margin-bottom: 15px;
 }
 
 .row {
@@ -283,7 +282,7 @@ ul {
   margin: 15px 0;
 }
 
-#operacao-maquinas-florestais .content:nth-last-child(even) .row, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
+#operacao-de-maquinas-florestais .content:nth-last-child(even) .row, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
   flex-direction: row;
 }
 
@@ -318,10 +317,6 @@ ul {
   color: white;
 }
 
-#solda .text ul li {
-  text-align: left;
-}
-
 #solda {
   background-image: url(../images/Home/Fotos-Detalhadas/solda.webp);
 }
@@ -332,6 +327,10 @@ ul {
 
 #harvester-esteira-op {
   background-image: url("../images/Home/Fotos-Detalhadas/pc/harvester-esteira/op-harvester-esteira-fundo.jpg")
+}
+
+#harvester-esteira-mt {
+	background-image: url("../images/Home/Fotos-Detalhadas/pc/harvester-esteira/mt-harvester-esteira-fundo.jpg");
 }
 
 #forwarder-op {
@@ -522,7 +521,7 @@ ul {
     display: flex;
     flex-direction: column;
     height: max-content;
-    padding: 15px;
+    padding: 30px;
     border-radius: 16px;
     background-color: rgba(122, 122, 122, 0.456);
   }
