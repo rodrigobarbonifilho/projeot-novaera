@@ -188,90 +188,28 @@ ul {
   display: block;
 }
 
-.content {
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: max-content;
-  padding: 20px 0;
-  line-height: 1.2em;
-  color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .content:nth-child(odd) {
   background-color: var(--color06);
   color: white;
-}
-
-.title-content {
-  font-family: "Roboto", sans-serif;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: fit-content;
-}
-
-.title-content > h2 {
-  font-size: 4rem;
-}
-
-.text-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text {
-	display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  height: max-content;
-  margin-top: 15px;
-  background-color: rgba(122, 122, 122, 0.456);
-  padding: 15px;
-  border-radius: 16px;
-  line-height: 2rem;
 }
 
 #operacao-maquinas-florestais .content:nth-last-child(even) .text, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .text {
   background-color: #203c20b5;
 }
 
-li {
-	font-size: 1.6rem;
-	line-height: 2rem;
+#operacao-de-maquinas-florestais .content:nth-last-child(even) .row, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
+  flex-direction: row;
 }
 
-.list-topic {
-	font-size: 2rem;
-	font-weight: bold;
+#operacao-de-maquinas-florestais .content:nth-last-child(even) .add-info, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .add-info{
+  align-self: flex-end;
+  border-radius: 10px 0 0 10px;
+  background-color: var(--color06);
+  color: white;
 }
 
-.text h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.text p {
-  text-align: center;
-  padding-bottom: 5px;
-  width: 100%;
-  font-weight: 500;
-}
-
-.text-contrast {
-  color: var(--color01);
-}
-
-.sublist {
-  text-indent: 2rem;
-	margin-bottom: 15px;
+.text-wrapper {
+  display: flex;
 }
 
 .row {
@@ -280,10 +218,6 @@ li {
   flex-direction: row-reverse;
   width: 100%;
   margin: 15px 0;
-}
-
-#operacao-de-maquinas-florestais .content:nth-last-child(even) .row, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
-  flex-direction: row;
 }
 
 .img-wrapper-course {
@@ -310,13 +244,6 @@ li {
   align-self: flex-start;
 }
 
-#operacao-de-maquinas-florestais .content:nth-last-child(even) .add-info, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .add-info{
-  align-self: flex-end;
-  border-radius: 10px 0 0 10px;
-  background-color: var(--color06);
-  color: white;
-}
-
 #solda {
   background-image: url(../images/Home/Fotos-Detalhadas/solda.webp);
 }
@@ -333,12 +260,24 @@ li {
 	background-image: url("../images/Home/Fotos-Detalhadas/pc/harvester-esteira/mt-harvester-esteira-fundo.jpg");
 }
 
+#harvester-pneu-mt {
+	background-image: url("../images/Home/Fotos-Detalhadas/pc/harvester-pneu/mt-harvester-pneu-fundo.svg");
+}
+
 #forwarder-op {
   background-image: url("../images/Home/Fotos-Detalhadas/pc/forwarder/op-forwarder-fundo.jpg");
 }
 
+#forwarder-mt {
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/forwarder/mt-forwarder-fundo.jpg");
+}
+
 #retroescavadeira-op {
   background-image: url("../images/Home/Fotos-Detalhadas/pc/retroescavadeira/op-retroescavadeira-fundo.jpg");
+}
+
+#retroescavadeira-mt {
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/retroescavadeira/mt-retroescavadeira-fundo.jpg");
 }
 
 #empilhadeira-op {
@@ -347,6 +286,14 @@ li {
 
 #caminhao-grua-op {
   background-image: url("../images/Home/Fotos-Detalhadas/pc/caminhão-grua/op-caminhao-grua-fundo.jpg");
+}
+
+#picador-de-madeira-mt {
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/picador-de-madeira/mt-picador-de-madeira-fundo.png");
+}
+
+#sistema-de-supressa-de-incendio-mt {
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/incendio/mt-incendio-fundo.jpg");
 }
 
 @media (min-width: 768px) {
@@ -487,15 +434,29 @@ li {
   /*          Courses Detailed          */
   /* ================================== */
   .content {
-    min-height: 90vh;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;
+    padding: 20px 0;
+    line-height: 1.2em;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+  
 
   .title-content {
+    font-family: "Roboto", sans-serif;
+    text-align: left;
     display: flex;
     justify-content: flex-start;
-    line-height: 2em;
+    align-items: center;
     width: 100%;
     height: fit-content;
+    line-height: 2em;
   }
 
   .title-content > h2 {
@@ -505,6 +466,23 @@ li {
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.383);
     background-color: var(--color06);
     color: white;
+  }
+  
+  .text-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: max-content;
+    margin-top: 15px;
+    background-color: rgba(122, 122, 122, 0.456);
+    padding: 15px;
+    border-radius: 16px;
+    line-height: 2rem;
   }
 
   .content:nth-child(odd) > .title-content {
@@ -532,17 +510,24 @@ li {
   }
 
   .text p {
-    text-align: center;
     font-weight: 500;
-    padding-bottom: 5px;
+    text-align: center;
     width: 100%;
+    padding-bottom: 5px;
   }
 
-  .text-contrast {
-    color: var(--color01);
+  li {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  
+  .list-topic {
+    font-size: 2rem;
+    font-weight: bold;
   }
 
   .sublist {
     text-indent: 2rem;
+  	margin-bottom: 15px;
   }
 }

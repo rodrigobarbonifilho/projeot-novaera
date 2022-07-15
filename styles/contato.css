@@ -209,18 +209,6 @@ button.submit-question {
 	bottom: 0;
 }
 
-/* Footer */
-footer {
-	background-color: var(--contrast-color);
-}
-
-footer > p {
-	text-align: center;
-	font-size: 16px;
-	font-weight: bold;
-	padding: 15px 0px;
-}
-
 @media (min-width: 768px) {
 	.contact:nth-child(2) ul {
 		font-size: 2rem;
@@ -336,9 +324,5 @@ footer > p {
 		box-shadow: inset 1px 1px 8px rgba(255, 255, 255, 0.3),
 					inset -1px -1px 8px rgba(0, 0, 0, 0.7);
 		cursor: pointer;
-	}
-
-	footer > p {
-		font-size: 18px;
 	}
 }
