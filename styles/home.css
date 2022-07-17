@@ -52,17 +52,17 @@ ul {
 
 .hero__text__title {
   font-family: "Roboto";
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 900;
 }
 
 .hero__text__paragraph {
   font-family: var(--normal-font);
-  font-size: 2.3rem;
+  font-size: 3rem;
 }
 
 .button-novidades {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: underline;
   border-radius: 10px;
   cursor: pointer;
@@ -188,34 +188,114 @@ ul {
   display: block;
 }
 
+.content {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: max-content;
+  padding: 20px 0;
+  line-height: 1.2em;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title-content {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  line-height: 2em;
+}
+
+.text-wrapper {
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
 .content:nth-child(odd) {
   background-color: var(--color06);
   color: white;
+}
+
+.content:nth-child(odd) > .title-content {
+  justify-content: center;
+}
+
+.title-content > h2 {
+  font-size: 3rem;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.383);
+  background-color: var(--color06);
+  color: white;
+}
+
+.content:nth-child(odd) > .title-content > h2 {
+  background-color: var(--color01);
+  color: var(--color06);
+}
+
+.text h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+li {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.list-topic {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sublist {
+  text-indent: 2rem;
+  margin-bottom: 15px;
 }
 
 #operacao-maquinas-florestais .content:nth-last-child(even) .text, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .text {
   background-color: #203c20b5;
 }
 
+.row
 #operacao-de-maquinas-florestais .content:nth-last-child(even) .row, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
-  flex-direction: row;
-}
-
-#operacao-de-maquinas-florestais .content:nth-last-child(even) .add-info, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .add-info{
-  align-self: flex-end;
-  border-radius: 10px 0 0 10px;
-  background-color: var(--color06);
-  color: white;
+  flex-direction: column-reverse;
 }
 
 .text-wrapper {
   display: flex;
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: rgba(122, 122, 122, 0.456);
+}
+
 .row {
   display: flex;
   justify-content: space-around;
-  flex-direction: row-reverse;
+  align-items: center;
+  flex-direction: column-reverse;
   width: 100%;
   margin: 15px 0;
 }
@@ -225,7 +305,7 @@ ul {
   justify-content: center;
   align-items: center;
   max-width: 650px;
-  margin: 15px 0;
+  margin: 15px 15px;
 }
 
 .img-wrapper-course img {
@@ -235,13 +315,13 @@ ul {
 
 .add-info {
   font-family: "Catamaran", sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   font-weight: bold;
+  align-self: center;
   padding: 10px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
   background-color: var(--color02);
   color: var(--color06);
-  align-self: flex-start;
 }
 
 #solda {
@@ -297,6 +377,10 @@ ul {
 }
 
 @media (min-width: 768px) {
+  html {
+    font-size: 30%;
+  }
+
   /* ================================== */
   /*          Principal Hero            */
   /* ================================== */
@@ -363,9 +447,38 @@ ul {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
     background-color: var(--color03);
   }
+
+  /* ================================== */
+  /*         Detailed Courses           */
+  /* ================================== */  
+  .title-content > h2 {
+    font-size: 3rem;
+    padding: 10px;
+  }
+  
+  .text-wrapper {
+    width: 90%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .img-wrapper-course {
+    max-width: 450px;
+  }
+
+  .add-info {
+    font-size: 2rem;
+    padding: 5px;
+  }
 }
 
 @media (min-width: 1024px) {
+  html {
+    font-size: 40%;
+  }
+
   /* ================================== */
   /*          Principal Hero            */
   /* ================================== */
@@ -414,120 +527,43 @@ ul {
   }
 }
 
-@media (min-width: 1200px) {
-  /* ================================== */
-  /*          Principal Hero            */
-  /* ================================== */
-  .hero__text__title {
-    font-size: 8rem;
+@media (min-width: 1366px) {
+  #operacao-de-maquinas-florestais .content:nth-last-child(even) .row,
+  #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
+    flex-direction: row;
   }
-
-  .hero__text__paragraph {
-    font-size: 3rem;
-  }
-
-  .button-novidades {
-    font-size: 2.5rem;
-  }
-    
-  /* ================================== */
-  /*          Courses Detailed          */
-  /* ================================== */
-  .content {
-    font-size: 2rem;
+  
+  .row {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: max-content;
-    padding: 20px 0;
-    line-height: 1.2em;
-    color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-
-  .title-content {
-    font-family: "Roboto", sans-serif;
-    text-align: left;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row-reverse;
     width: 100%;
-    height: fit-content;
-    line-height: 2em;
+    margin: 15px 0;
   }
 
-  .title-content > h2 {
+  .title-content h2 {
     font-size: 5rem;
-    padding: 20px;
+    padding: 15px;
+  }
+
+  .text-wrapper {
+    width: 600px;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .add-info {
+    align-self: flex-end;
+    border-radius: 15px 0 0 15px;
+  }
+
+  #operacao-de-maquinas-florestais .content:nth-last-child(even) .add-info, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .add-info {
+    align-self: flex-start;
     border-radius: 0 15px 15px 0;
-    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.383);
     background-color: var(--color06);
     color: white;
-  }
-  
-  .text-wrapper {
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .text {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    height: max-content;
-    margin-top: 15px;
-    background-color: rgba(122, 122, 122, 0.456);
-    padding: 15px;
-    border-radius: 16px;
-    line-height: 2rem;
-  }
-
-  .content:nth-child(odd) > .title-content {
-    justify-content: flex-end;
-  }
-
-  .content:nth-child(odd) > .title-content > h2 {
-    border-radius: 15px 0 0 15px;
-    background-color: var(--color01);
-    color: var(--color06);
-  }
-
-  .text {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-    padding: 30px;
-    border-radius: 16px;
-    background-color: rgba(122, 122, 122, 0.456);
-  }
-
-  .text h3 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .text p {
-    font-weight: 500;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 5px;
-  }
-
-  li {
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-  
-  .list-topic {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
-  .sublist {
-    text-indent: 2rem;
-  	margin-bottom: 15px;
   }
 }
