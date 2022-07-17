@@ -36,7 +36,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  height: 40vh;
+  height: 60vh;
   background-image: url("../images/Home/Hero/hero-template.webp");
 	background-position: center center;
   background-size: cover;
@@ -138,22 +138,22 @@ ul {
 
 .card-description p {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 .card-list {
   list-style: none;
-  font-size: 1.8rem;
 }
 
 .card-list li {
   display: flex;
-  line-height: 2rem;
+  line-height: 2.3rem;
+  font-size: 2rem;
 }
 
 .list-marker {
-  align-self: flex-start;
+  align-self: center;
   height: 1.8rem;
   font-size: 1.8rem;
 }
@@ -166,9 +166,11 @@ ul {
 }
 
 .link-wrapper > a {
+  text-align: center;
   font-size: 1.8rem;
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.171);
+  width: 100%;
   padding: 5px 12px;
   border-radius: 8px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
@@ -237,7 +239,9 @@ ul {
 }
 
 .title-content > h2 {
-  font-size: 3rem;
+  text-align: center;
+  font-size: 4rem;
+  min-width: 30%;
   padding: 8px 10px;
   border-radius: 15px;
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.383);
@@ -326,12 +330,8 @@ li {
   color: #FFF;
 }
 
-#solda {
-  background-image: url(../images/Home/Fotos-Detalhadas/solda.webp);
-}
-
 #solda .content {
-  height: 120vh;
+  background-image: url("../images/Home/Fotos-Detalhadas/pc/solda/solda-fundo.jpg");
 }
 
 #harvester-esteira-op {
@@ -387,7 +387,7 @@ li {
   /*          Principal Hero            */
   /* ================================== */
   .hero {
-    height: 70vh;
+    height: 80vh;
   }
 
   .hero__text__title {
