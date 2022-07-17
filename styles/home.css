@@ -194,12 +194,31 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: max-content;
+  min-height: 100vh;
   padding: 20px 0;
   line-height: 1.2em;
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.content:nth-child(odd) {
+  background-color: var(--color06);
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+}
+
+.row
+#operacao-de-maquinas-florestais .content:nth-last-child(even) .row, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
+  flex-direction: column-reverse;
 }
 
 .title-content {
@@ -213,24 +232,13 @@ ul {
   line-height: 2em;
 }
 
-.text-wrapper {
-  justify-content: center;
-  align-items: center;
-  margin: 0 15px;
-}
-
-.content:nth-child(odd) {
-  background-color: var(--color06);
-  color: white;
-}
-
 .content:nth-child(odd) > .title-content {
   justify-content: center;
 }
 
 .title-content > h2 {
   font-size: 3rem;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 15px;
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.383);
   background-color: var(--color06);
@@ -240,6 +248,26 @@ ul {
 .content:nth-child(odd) > .title-content > h2 {
   background-color: var(--color01);
   color: var(--color06);
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: rgba(122, 122, 122, 0.456);
+}
+
+#operacao-de-maquinas-florestais .content:nth-last-child(even) .text, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .text {
+  background-color: #203c20b5;
 }
 
 .text h3 {
@@ -269,42 +297,11 @@ li {
   margin-bottom: 15px;
 }
 
-#operacao-maquinas-florestais .content:nth-last-child(even) .text, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .text {
-  background-color: #203c20b5;
-}
-
-.row
-#operacao-de-maquinas-florestais .content:nth-last-child(even) .row, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
-  flex-direction: column-reverse;
-}
-
-.text-wrapper {
-  display: flex;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  height: max-content;
-  padding: 30px;
-  border-radius: 16px;
-  background-color: rgba(122, 122, 122, 0.456);
-}
-
-.row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column-reverse;
-  width: 100%;
-  margin: 15px 0;
-}
-
 .img-wrapper-course {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 650px;
+  max-width: 550px;
   margin: 15px 15px;
 }
 
@@ -318,10 +315,15 @@ li {
   font-size: 2.3rem;
   font-weight: bold;
   align-self: center;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 10px;
   background-color: var(--color02);
   color: var(--color06);
+}
+
+.content:nth-child(even) .add-info {
+  background-color: var(--color06);
+  color: #FFF;
 }
 
 #solda {
@@ -449,36 +451,24 @@ li {
   }
 
   /* ================================== */
-  /*         Detailed Courses           */
-  /* ================================== */  
+  /*          Courses Detailed          */
+  /* ================================== */
   .title-content > h2 {
-    font-size: 3rem;
-    padding: 10px;
-  }
-  
-  .text-wrapper {
-    width: 90%;
+    font-size: 4rem;
+    padding: 10px 15px;
   }
 
-  .text {
-    width: 100%;
-  }
-
-  .img-wrapper-course {
-    max-width: 450px;
+  .content:nth-child(odd) > .title-content > h2 {
+    padding: 10px 15px;
   }
 
   .add-info {
-    font-size: 2rem;
-    padding: 5px;
+    font-size: 2.5rem;
+    padding: 8px 10px;
   }
 }
 
 @media (min-width: 1024px) {
-  html {
-    font-size: 40%;
-  }
-
   /* ================================== */
   /*          Principal Hero            */
   /* ================================== */
@@ -525,45 +515,49 @@ li {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
     background-color: var(--color03);
   }
-}
 
-@media (min-width: 1366px) {
-  #operacao-de-maquinas-florestais .content:nth-last-child(even) .row,
-  #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
+  /* ================================== */
+  /*          Detailed Courses          */
+  /* ================================== */  
+  .row {
+    flex-direction: row-reverse;
+    padding: 30px;
+  }
+  
+  #operacao-de-maquinas-florestais .content:nth-last-child(even) .row, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .row {
     flex-direction: row;
   }
   
-  .row {
+  .title-content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-    width: 100%;
-    margin: 15px 0;
+    justify-content: flex-start;
   }
-
-  .title-content h2 {
+  
+  .content:nth-child(odd) > .title-content {
+    justify-content: flex-end;
+  }
+  
+  .title-content > h2 {
     font-size: 5rem;
     padding: 15px;
+    border-radius: 0 15px 15px 0;
   }
-
-  .text-wrapper {
-    width: 600px;
+  
+  .content:nth-child(odd) > .title-content > h2 {
+    border-radius: 15px 0 0 15px;
   }
-
-  .text {
-    width: 100%;
+  
+  .img-wrapper-course {
+    max-width: 550px;
   }
 
   .add-info {
-    align-self: flex-end;
-    border-radius: 15px 0 0 15px;
+    align-self: flex-start;
+    border-radius: 0 10px 10px 0;
   }
 
-  #operacao-de-maquinas-florestais .content:nth-last-child(even) .add-info, #manutencao-de-maquinas-florestais .content:nth-last-child(odd) .add-info {
-    align-self: flex-start;
-    border-radius: 0 15px 15px 0;
-    background-color: var(--color06);
-    color: white;
+  .content:nth-child(even) .add-info {
+    align-self: flex-end;
+    border-radius: 10px 0 0 10px;
   }
 }
