@@ -1,88 +1,12 @@
-@charset "UTF-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-html {
-	font-family: "Roboto", sans-serif;
-	overflow: hidden;
-}
-
-body::-webkit-scrollbar {
-	display: none;
-}
-
 main {
-	display: grid;
-	grid-template-columns: 2fr 3fr;
-	grid-template-rows: 1fr;
-	height: 80vh;
-	color: white;
-	background-image: url(../images/EAD/hero/background.jpg);
-	background-position: center bottom;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.column2 {
-	grid-column-start: 2;
-}
-
-.flex {
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-}
-
-main img {
-	justify-self: center;
-	align-self: center;
-	width: 85%;
-}
-
-.text-container {
-	border-radius: 15px;
-	width: 750px;
-	height: fit-content;
-	padding: 15px;
-	background-color: #1b8c5770;
-}
-
-.text-container h1 {
-	display: inline-block;
-	font-family: "Roboto", sans-serif;
 	font-size: 4rem;
+	height: fit-content;
 }
 
-.text-container p {
-	font-family: "Catamaran", sans-serif;
-	font-size: 2.5rem;
-	line-height: 1.5em;
-	text-indent: 1em;
-}
-
-.subscribe-button {
-	display: flex;
-	grid-column-start: 2;
-	justify-self: center;
-	justify-content: center;
-	align-items: center;
-	width: 750px;
-	height: 75px;
-	margin-top: 40px;
-	border-radius: 15px;
-	cursor: pointer;
-	background-color: var(--color04);
-	box-shadow: 0px 4px 0px 0px var(--color05),
-				4px 0px 0px 0px var(--color05),
-				4px 4px 0px 0px var(--color05);
-}
-
-.subscribe-button a {
-	font-family: "Catamaran", sans-serif;
-	font-size: 2em;
-	padding: 30px 40px;
-	color: white;
+p {
+	padding: 15px 0;
 }
