@@ -11,7 +11,8 @@
 }
 
 #navbar .navbar__logo {
-	width: 20rem;
+	width: 10rem;
+	padding: 6px 0 0 2px;
 }
 
 #navbar .navbar__list {
@@ -104,7 +105,8 @@
 	}
 	
 	#navbar .navbar__logo {
-		width: 27rem;
+		width: 13rem;
+		padding: 8px 0;
 	}
 	
 	#navbar .collapse-links, #navbar .collapse-links.activate {
