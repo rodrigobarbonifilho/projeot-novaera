@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="styles/navbar.css">
 	<link rel="stylesheet" href="styles/footer.css">
 	<link rel="stylesheet" href="styles/servicos.css">
-
 </head>
 <body>
 	<!-- NAVBAR -->
@@ -39,11 +38,17 @@
 	
 	<!-- MAIN CONTENT -->
 	<main>
-		<div class="search-bar-container">
-
+		<div class="search-box-container">
+			<div class="search-box">
+				<ion-icon name="search-outline"></ion-icon>
+				<input type="text" name="search" id="searchJs" placeholder="Procure aqui uma empresa ou vaga específica">
+			</div>
 		</div>
-		<div class="job-cards-container">
-			
+		<div class="jobs-card-wrapper">
+			<div class="job-cards-container">
+				<h2></h2>
+				<img src="images/Serviços/no-jobs-image.svg" alt="">
+			</div>
 		</div>
 	</main>
 
@@ -53,4 +58,7 @@
 	</footer>
 </body>
 <script src="scripts/activate_toggle_button.js"></script>
+<script src="scripts/servicos.js" type="module"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
