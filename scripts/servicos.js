@@ -131,8 +131,6 @@ function setVagas(text) {
 
     let vagas = filterJobs(text);
 
-    console.log(vagas);
-
     if (vagas.length === 0) {
         jobCardsContainer.appendChild(createWarn(text));
     } else {
