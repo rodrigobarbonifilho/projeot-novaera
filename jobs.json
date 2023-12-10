@@ -1,7 +1,7 @@
 {
     "Vaga 01": {
         "nome": "Vaga para Tratorista",
-        "imagem": "./../images/Serviços/vaga-teste.jpg",
+        "imagem": "./../images/Servicos/vaga-teste.jpg",
         "local": "Mauricío",
         "empresa": "Azevedo",
         "logoEmpresa": "./../images/logo.svg",
@@ -9,7 +9,7 @@
     },
     "Vaga 02": {
         "nome": "Vaga para Escavadeirista",
-        "imagem": "./../images/Serviços/vaga-teste.jpg",
+        "imagem": "./../images/Servicos/vaga-teste.jpg",
         "local": "Uberlândia",
         "empresa": "Bracel",
         "logoEmpresa": "./../images/logo.svg",
@@ -17,7 +17,7 @@
     },
     "Vaga 03": {
         "nome": "Vaga para Plantista",
-        "imagem": "./../images/Serviços/vaga-teste.jpg",
+        "imagem": "./../images/Servicos/vaga-teste.jpg",
         "local": "Santos",
         "empresa": "Barboni",
         "logoEmpresa": "./../images/logo.svg",
@@ -25,7 +25,7 @@
     },
     "Vaga 04": {
         "nome": "Vaga para Tratorista",
-        "imagem": "./../images/Serviços/vaga-teste.jpg",
+        "imagem": "./../images/Servicos/vaga-teste.jpg",
         "local": "Mauricío",
         "empresa": "Azevedo",
         "logoEmpresa": "./../images/logo.svg",
@@ -33,7 +33,7 @@
     },
     "Vaga 05": {
         "nome": "Vaga para Escavadeirista",
-        "imagem": "./../images/Serviços/vaga-teste.jpg",
+        "imagem": "./../images/Servicos/vaga-teste.jpg",
         "local": "Uberlândia",
         "empresa": "Bracel",
         "logoEmpresa": "./../images/logo.svg",
@@ -41,7 +41,7 @@
     },
     "Vaga 06": {
         "nome": "Vaga para Plantista",
-        "imagem": "./../images/Serviços/vaga-teste.jpg",
+        "imagem": "./../images/Servicos/vaga-teste.jpg",
         "local": "Santos",
         "empresa": "Barboni",
         "logoEmpresa": "./../images/logo.svg",
@@ -49,7 +49,7 @@
     },
     "Vaga 07": {
         "nome": "Vaga para Tratorista",
-        "imagem": "./../images/Serviços/vaga-teste.jpg",
+        "imagem": "./../images/Servicos/vaga-teste.jpg",
         "local": "Mauricío",
         "empresa": "Azevedo",
         "logoEmpresa": "./../images/logo.svg",
@@ -57,7 +57,7 @@
     },
     "Vaga 08": {
         "nome": "Vaga para Escavadeirista",
-        "imagem": "./../images/Serviços/vaga-teste.jpg",
+        "imagem": "./../images/Servicos/vaga-teste.jpg",
         "local": "Uberlândia",
         "empresa": "Bracel",
         "logoEmpresa": "./../images/logo.svg",
@@ -65,7 +65,7 @@
     },
     "Vaga 09": {
         "nome": "Vaga para Plantista",
-        "imagem": "./../images/Serviços/vaga-teste.jpg",
+        "imagem": "./../images/Servicos/vaga-teste.jpg",
         "local": "Santos",
         "empresa": "Barboni",
         "logoEmpresa": "./../images/logo.svg",

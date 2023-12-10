@@ -84,10 +84,10 @@ function createWarn(text) {
 
     if (text === "") {
         h2.innerText = "Volte mais tarde, estamos procurando mais oportunidades para você!";
-        image.src = "images/Serviços/no-jobs-image.svg";
+        image.src = "images/Servicos/no-jobs-image.svg";
     } else {
         h2.innerText = "Sem resultados para esta pesquisa!";
-        image.src = "images/Serviços/no-results-image.svg";
+        image.src = "images/Servicos/no-results-image.svg";
     }
 
     warningContainer.appendChild(h2);
