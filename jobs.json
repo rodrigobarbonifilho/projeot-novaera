@@ -6,5 +6,61 @@
         "empresa": "Bracel",
         "logoEmpresa": "../images/logo.svg",
         "conteudo": "Conteúdo"
+    },
+    "Vaga 02": {
+        "nome": "Vaga para Escavadeira",
+        "imagem": "../images/Serviços/vaga-teste.jpg",
+        "local": "Uberlândia",
+        "empresa": "Bracel",
+        "logoEmpresa": "../images/logo.svg",
+        "conteudo": "Conteúdo"
+    },
+    "Vaga 03": {
+        "nome": "Vaga para Escavadeira",
+        "imagem": "../images/Serviços/vaga-teste.jpg",
+        "local": "Uberlândia",
+        "empresa": "Bracel",
+        "logoEmpresa": "../images/logo.svg",
+        "conteudo": "Conteúdo"
+    },
+    "Vaga 04": {
+        "nome": "Vaga para Escavadeira",
+        "imagem": "../images/Serviços/vaga-teste.jpg",
+        "local": "Uberlândia",
+        "empresa": "Bracel",
+        "logoEmpresa": "../images/logo.svg",
+        "conteudo": "Conteúdo"
+    },
+    "Vaga 05": {
+        "nome": "Vaga para Escavadeira",
+        "imagem": "../images/Serviços/vaga-teste.jpg",
+        "local": "Uberlândia",
+        "empresa": "Bracel",
+        "logoEmpresa": "../images/logo.svg",
+        "conteudo": "Conteúdo"
+    },
+    "Vaga 06": {
+        "nome": "Vaga para Escavadeira",
+        "imagem": "../images/Serviços/vaga-teste.jpg",
+        "local": "Uberlândia",
+        "empresa": "Bracel",
+        "logoEmpresa": "../images/logo.svg",
+        "conteudo": "Conteúdo"
+    },
+    "Vaga 07": {
+        "nome": "Vaga para Escavadeira",
+        "imagem": "../images/Serviços/vaga-teste.jpg",
+        "local": "Uberlândia",
+        "empresa": "Bracel",
+        "logoEmpresa": "../images/logo.svg",
+        "conteudo": "Conteúdo"
+    },
+    "Vaga 08": {
+        "nome": "Vaga para Escavadeira",
+        "imagem": "../images/Serviços/vaga-teste.jpg",
+        "local": "Uberlândia",
+        "empresa": "Bracel",
+        "logoEmpresa": "../images/logo.svg",
+        "conteudo": "Conteúdo"
     }
 }
