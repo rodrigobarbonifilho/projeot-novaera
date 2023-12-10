@@ -1,26 +1,10 @@
 {
     "Vaga 01": {
-        "nome": "Nome da Vaga",
-        "imagem": "Imagem",
-        "local": "Local",
+        "nome": "Vaga para Escavadeira",
+        "imagem": "../images/Serviços/vaga-teste.jpg",
+        "local": "Uberlândia",
         "empresa": "Bracel",
-        "logo da empresa": "Imagem",
-        "conteudo": "Conteúdo"
-    },
-    "Vaga 02": {
-        "nome": "Nome da Vaga",
-        "imagem": "Imagem",
-        "local": "Local",
-        "empresa": "Risel",
-        "logo da empresa": "Imagem",
-        "conteudo": "Conteúdo"
-    },
-    "Vaga 03": {
-        "nome": "Nome da Vaga",
-        "imagem": "Imagem",
-        "local": "Local",
-        "empresa": "Barboni",
-        "logo da empresa": "Imagem",
+        "logoEmpresa": "../images/logo.svg",
         "conteudo": "Conteúdo"
     }
 }

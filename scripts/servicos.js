@@ -2,7 +2,6 @@ import jobs from "../jobs.json" assert {type: "json"};
 
 const searchBox = document.querySelector("#searchJs");
 const jobCardsContainer = document.querySelector(".job-cards-container");
-let vagasInfo = Object.values(jobs);
 
 /*
 <div class="job-card">
@@ -36,6 +35,7 @@ function createVaga(vagaInfo) {
     const jobCard = createDiv(); jobCard.className = "job-card";
 
     const jobImage = createDiv(); jobImage.className = "job-image";
+    jobImage.style.backgroundImage = `url(${vagaInfo.imagem})`;
 
     const jobInfo = createDiv(); jobInfo.className = "job-info"
     const top = createDiv(); top.className = "top";
@@ -44,12 +44,13 @@ function createVaga(vagaInfo) {
     const p1 = document.createElement("p"); p1.innerText = vagaInfo.local;
     const p2 = document.createElement("p"); p2.innerText = vagaInfo.empresa;
     const enterpriseImage = createDiv(); enterpriseImage.className = "enterprise-image";
+    enterpriseImage.style.backgroundImage = `url(${vagaInfo.logoEmpresa})`;
 
     const p3 = document.createElement("p"); p3.innerText = vagaInfo.conteudo;
 
     const buttonsWrapper = createDiv(); buttonsWrapper.className = "buttons-wrapper";
     const button1 = document.createElement("button"); button1.textContent = "Candidatar-se à Vaga";
-    const button2 = document.createElement("button"); button2.innerHTML = "<p>Torne-se apto à vaga!</p><p>Conheça nossos cursos</p>"; button2.classList = "secondary"
+    const button2 = document.createElement("button"); button2.innerHTML = "<a href='contato.html'><p>Torne-se apto à vaga!</p><p>Conheça nossos cursos</p></a>"; button2.classList = "secondary"
 
     content.appendChild(h3);
     content.appendChild(p1);
@@ -74,14 +75,24 @@ function createVaga(vagaInfo) {
     return jobCard;
 }
 
-function createWarn() {
-    const h2 = document.createElement("h2");
-    h2.innerText = "Volte mais tarde, estamos procurando mais oportunidades para você!";
+function createWarn(text) {
+    const warningContainer = document.createElement("div");
+    warningContainer.classList = "warning-container";
 
-    const imageOfNone = document.createElement("img");
-    imageOfNone.src = "images/Serviços/no-jobs-image.svg";
-    jobCardsContainer.appendChild(h2);
-    jobCardsContainer.appendChild(imageOfNone);
+    const h2 = document.createElement("h2");
+    const image = document.createElement("img");
+
+    if (text === "") {
+        h2.innerText = "Volte mais tarde, estamos procurando mais oportunidades para você!";
+        image.src = "images/Serviços/no-jobs-image.svg";
+    } else {
+        h2.innerText = "Sem resultados para esta pesquisa!";
+        image.src = "images/Serviços/no-results-image.svg";
+    }
+
+    warningContainer.appendChild(h2);
+    warningContainer.appendChild(image);
+    jobCardsContainer.appendChild(warningContainer);
 }
 
 function cleanJobCardsContainer() {
@@ -93,30 +104,40 @@ function cleanJobCardsContainer() {
 }
 
 function filterJobs(text) {
-    if (text === "" || text === null) {
-        return Object.values(jobs);
-    } else {
-        let jobsFiltered = [];
-        Object.keys(jobs).forEach((key) => {
-            Object.keys(key).forEach((value) => {
-                if (value === text) {
-                    jobsFiltered.append(jobs[key]);
+    let vagasKeys = Object.keys(jobs);
+    let vagas = [];
+
+    vagasKeys.forEach(key => {
+        let vagaInfo = Object.values(jobs[key]);
+
+        if (text !== "") {
+            let re = new RegExp(`${text}`, "gi");
+
+            vagaInfo.forEach(info => {
+                if (re.test(info) && vagas.indexOf(key) === -1) {
+                    vagas.push(key);
                 }
-            });
-        })
-        return jobsFiltered
-    }
+            })
+        } else {
+            vagas.push(key);
+        }
+    })
+
+    return vagas;
 }
 
 function setVagas(text) {
     cleanJobCardsContainer();
-    let filteredJobs = filterJobs(text);
 
-    if (filteredJobs.length === 0) {
-        jobCardsContainer.appendChild(createWarn());
+    let vagas = filterJobs(text);
+
+    console.log(vagas);
+
+    if (vagas.length === 0) {
+        jobCardsContainer.appendChild(createWarn(text));
     } else {
-        filteredJobs.forEach(vaga => {
-            jobCardsContainer.appendChild(createVaga(vaga));
+        vagas.forEach(vaga => {
+            jobCardsContainer.appendChild(createVaga(jobs[vaga]));
         })
     }
 }
@@ -126,6 +147,5 @@ window.addEventListener("load", () => {
 })
 
 searchBox.addEventListener("input", () => {
-    console.log(searchBox.value);
     setVagas(searchBox.value);
 });
