@@ -165,7 +165,7 @@ button:target {
     background-color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .search-box-container {
         height: 200px;
     }
