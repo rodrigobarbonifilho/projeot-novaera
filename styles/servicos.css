@@ -186,21 +186,57 @@ button:target {
     }
 
     .job-card {
-        flex-direction: column;
-        height: 800px;
+        display: grid;
+        grid-template-rows: 240px 400px;
+        width: 80%;
+        height: fit-content;
     }
 
     .job-image {
         width: 100%;
-        height: 100%;
+        height: 240px;
+        border-radius: 8px 8px 0 0;
     }
 
     .job-info {
         width: 100%;
-        height: 500px;
+        height: 100%;
+        grid-template-rows: 1fr 1fr 2fr;
     }
 
     .job-cards-container {
         min-height: 600px;
+    }
+
+    .job-info .enterprise-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .buttons-wrapper {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .buttons-wrapper button {
+        font-size: 24px;
+        width: 100%;
+        height: calc(50% - 8px);
+    }
+
+    .buttons-wrapper a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 6px;
+    }
+
+    .buttons-wrapper button a p:nth-child(1) {
+        font-size: 22px;
+    }
+
+    .buttons-wrapper button a p:nth-child(2) {
+        font-size: 22px;
     }
 }
