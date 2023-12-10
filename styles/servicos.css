@@ -188,7 +188,7 @@ button:target {
 
     .job-card {
         display: grid;
-        grid-template-rows: 240px 400px;
+        grid-template-rows: 240px 340px;
         width: 80%;
         height: fit-content;
     }
@@ -202,7 +202,24 @@ button:target {
     .job-info {
         width: 100%;
         height: 100%;
-        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-rows: 80px 100px 120px;
+    }
+
+    .job-info .top .content h3 {
+        font-size: 18px;
+    }
+
+    .job-info .top .content p {
+        font-size: 14px;
+        color: #777686;
+    }
+
+    .job-info > p {
+        font-size: 14px;
+        width: 100%;
+        align-self: center;
+        padding-bottom: 12px;
+        color: #777686;
     }
 
     .job-cards-container {
@@ -210,8 +227,8 @@ button:target {
     }
 
     .job-info .enterprise-image {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .buttons-wrapper {
@@ -220,13 +237,12 @@ button:target {
     }
 
     .buttons-wrapper button {
-        font-size: 24px;
+        font-size: 16px;
         width: 100%;
-        height: calc(50% - 8px);
+        height: calc(50% - 4px);
     }
 
     .buttons-wrapper a {
-        display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -234,10 +250,10 @@ button:target {
     }
 
     .buttons-wrapper button a p:nth-child(1) {
-        font-size: 22px;
+        font-size: 14px;
     }
 
     .buttons-wrapper button a p:nth-child(2) {
-        font-size: 22px;
+        font-size: 16px;
     }
 }
