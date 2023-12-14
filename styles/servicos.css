@@ -214,6 +214,11 @@ button:target {
         grid-template-rows: 80px 100px 120px;
     }
 
+    .job-info .top {
+        text-align: right;
+        flex-direction: row-reverse;
+    }
+
     .job-info .top .content h3 {
         font-size: 18px;
     }
@@ -226,6 +231,8 @@ button:target {
     .job-info > p {
         font-size: 14px;
         width: 100%;
+        height: 100px;
+        text-overflow: ellipsis;
         align-self: center;
         padding-bottom: 12px;
         color: #777686;
@@ -236,8 +243,8 @@ button:target {
     }
 
     .job-info .enterprise-image {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
 
     .buttons-wrapper {
