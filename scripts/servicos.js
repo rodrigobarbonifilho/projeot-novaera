@@ -141,12 +141,14 @@ function setOptions() {
         }
     })
 
-    options.forEach(option => {
-        const opt = document.createElement("option");
-        opt.value = option
-        opt.innerText = option
-        searchSelect.appendChild(opt)
-    })
+    if (option.length !== 0) {
+        options.forEach(option => {
+            const opt = document.createElement("option");
+            opt.value = option
+            opt.innerText = option
+            searchSelect.appendChild(opt)
+        })
+    }
 }
 
 function setVagas(text) {
