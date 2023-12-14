@@ -142,7 +142,7 @@ function setOptions() {
         }
     })
 
-    if (option.length !== 0) {
+    if (options.length !== 0) {
         options.forEach(option => {
             const opt = document.createElement("option");
             opt.value = option
