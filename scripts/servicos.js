@@ -92,7 +92,8 @@ function createWarn(text) {
 
     warningContainer.appendChild(h2);
     warningContainer.appendChild(image);
-    jobCardsContainer.appendChild(warningContainer);
+
+    return warningContainer;
 }
 
 function cleanJobCardsContainer() {
