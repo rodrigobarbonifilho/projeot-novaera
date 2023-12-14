@@ -1,6 +1,6 @@
 import jobs from "../jobs.json" assert {type: "json"};
 
-const searchBox = document.querySelector("#searchJs");
+const searchSelect = document.querySelector("#searchJs");
 const jobCardsContainer = document.querySelector(".job-cards-container");
 
 /*
@@ -50,7 +50,7 @@ function createVaga(vagaInfo) {
 
     const buttonsWrapper = createDiv(); buttonsWrapper.className = "buttons-wrapper";
     const button1 = document.createElement("button"); button1.textContent = "Candidatar-se à Vaga";
-    const button2 = document.createElement("button"); button2.innerHTML = "<a href='contato.html'><p>Torne-se apto à vaga!</p><p>Conheça nossos cursos</p></a>"; button2.classList = "secondary"
+    const button2 = document.createElement("button"); button2.innerHTML = "<a href='index.html'><p>Torne-se apto à vaga!</p><p>Conheça nossos cursos</p></a>"; button2.classList = "secondary"
 
     content.appendChild(h3);
     content.appendChild(p1);
@@ -126,9 +126,35 @@ function filterJobs(text) {
     return vagas;
 }
 
+function setOptions() {
+    Array.from(searchSelect.children).slice(1).forEach(option => {
+        searchSelect.removeChild(option);
+    })
+
+    let vagas = Object.keys(jobs);
+    let options = [];
+
+    vagas.forEach(vaga => {
+        let opt = jobs[vaga].nome
+        if (options.indexOf(opt) === -1) {
+            options.push(opt);
+        }
+    })
+
+    options.forEach(option => {
+        const opt = document.createElement("option");
+        opt.value = option
+        opt.innerText = option
+        searchSelect.appendChild(opt)
+    })
+}
+
 function setVagas(text) {
     cleanJobCardsContainer();
 
+    if (text === "standard") {
+        text = "";
+    }
     let vagas = filterJobs(text);
 
     if (vagas.length === 0) {
@@ -142,8 +168,9 @@ function setVagas(text) {
 
 window.addEventListener("load", () => {
     setVagas("");
+    setOptions();
 })
 
-searchBox.addEventListener("input", () => {
-    setVagas(searchBox.value);
+searchSelect.addEventListener("input", () => {
+    setVagas(searchSelect.value);
 });

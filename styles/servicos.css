@@ -11,6 +11,7 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 12px 16px;
 }
 
 .warning-container h2 {
@@ -18,7 +19,7 @@ input {
 }
 
 .warning-container img {
-    height: 400px;
+    width: 100%;
 }
 
 .search-box-container {
@@ -43,9 +44,16 @@ input {
     box-shadow: 20px 20px var(--color05);
 }
 
-.search-box input {
+.search-box select {
     font-size: 28px;
     width: calc(100% - 24px);
+    height: 90%;
+    outline: none;
+    border: none;
+}
+
+.search-box select option {
+    padding: 4px 8px;
 }
 
 .job-cards-wrapper {
@@ -189,7 +197,7 @@ button:target {
     .job-card {
         display: grid;
         grid-template-rows: 240px 340px;
-        width: 80%;
+        width: 90%;
         height: fit-content;
     }
 
@@ -255,5 +263,9 @@ button:target {
 
     .buttons-wrapper button a p:nth-child(2) {
         font-size: 16px;
+    }
+
+    .warning-container h2 {
+        font-size: 30px;
     }
 }
