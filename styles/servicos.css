@@ -115,8 +115,9 @@ input {
 }
 
 .job-info > p {
+    display: flex;
+    align-items: center;
     width: 100%;
-    align-self: center;
     color: #777686;
 }
 
@@ -234,7 +235,6 @@ button:target {
         height: 100px;
         text-overflow: ellipsis;
         align-self: center;
-        padding-bottom: 12px;
         color: #777686;
     }
 

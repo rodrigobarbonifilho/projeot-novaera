@@ -41,8 +41,8 @@ function createVaga(vagaInfo) {
     const top = createDiv(); top.className = "top";
     const content = createDiv(); content.className = "content";
     const h3 = document.createElement("h3"); h3.innerText = vagaInfo.nome;
-    const p1 = document.createElement("p"); p1.innerText = vagaInfo.local;
-    const p2 = document.createElement("p"); p2.innerText = vagaInfo.empresa;
+    const p1 = document.createElement("p"); p1.innerHTML = `<ion-icon name="location-sharp"></ion-icon> ${vagaInfo.local}`;
+    const p2 = document.createElement("p"); p2.innerHTML = `<ion-icon name="business-sharp"></ion-icon> ${vagaInfo.empresa}`;
     const enterpriseImage = createDiv(); enterpriseImage.className = "enterprise-image";
     enterpriseImage.style.backgroundImage = `url(${vagaInfo.logoEmpresa})`;
 
